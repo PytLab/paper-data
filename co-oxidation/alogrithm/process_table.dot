@@ -1,0 +1,23 @@
+digraph config_hash_tb{
+    nodesep=.05
+    rankdir=LR;
+
+    node [shape=record, height=.3];
+    lattice_idx [label = "<f0> | <f1> | <f2> | <f3> | <f4> | <f5>", width=1.0];
+
+    node [width=2.5];
+    match_list0 [label = "{<n> |  |  |  |  }"];
+    match_list1 [label = "{<n> |  |  |  |  }"];
+    match_list2 [label = "{<n> |  |  |  |  }"];
+    match_list3 [label = "{<n> |  |  |  |  }"];
+    match_list4 [label = "{<n> |  |  |  |  }"];
+    match_list5 [label = "{<n> |  |  |  |  }"];
+
+    lattice_idx:f0 -> match_list0:n;
+    lattice_idx:f1 -> match_list1:n;
+    lattice_idx:f2 -> match_list2:n;
+    lattice_idx:f3 -> match_list3:n;
+    lattice_idx:f4 -> match_list4:n;
+    lattice_idx:f5 -> match_list5:n;
+}
+

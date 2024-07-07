@@ -1,0 +1,13 @@
+digraph co_ads{
+    graph [fontname="consolas"];
+    node [fontname="consolas"];
+    edge [fontname="consolas"];
+    nodesep=0.05;
+    rankdir=LR;
+    node [shape=record, width=0.1, height=0.1];
+
+    before [label = "{ |  |  |  | <tail>}", height=.3, width=2.5, fixsize=true];
+    after [label = "{<head> |  |  |  |  }", height=.3, width=2.5, fixsize=true];
+
+    before:tail -> after:head;
+}

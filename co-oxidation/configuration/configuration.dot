@@ -1,0 +1,13 @@
+digraph o2_ads{
+    graph [fontname="consolas"];
+    node [fontname="consolas"];
+    edge [fontname="consolas"];
+    nodesep=0.05;
+    rankdir=LR;
+    node [shape=record, width=0.1, height=0.1];
+
+    index [label="", height=.3, width=0.3, fixsize=true];
+    list [label = "{<head> | | | | | |  |  | }", height=.3, width=3.0, fixsize=true];
+
+    index -> list:head;
+}

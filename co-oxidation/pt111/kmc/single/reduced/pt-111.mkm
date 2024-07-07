@@ -1,0 +1,34 @@
+surface_name = 'Pt-111'
+active_ratio = 0.333333333333
+empty_type = 'V'
+random_generator = 'MT'
+parser = 'KMCParser'
+seed = 13996
+basis_sites = [[0.0, 0.0, 0.0], [0.0, 0.5, 0.0], [0.5, 0.0, 0.0], [0.5, 0.5, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0]]
+cell_vectors = [[1.0, 0.0, 0.0], [0.5, 0.87, 0.0], [0.0, 0.0, 1.0]]
+time_limit = 100.0
+nstep = 100000
+temperature = 500
+do_redistribution = True
+analysis_interval = [100, 1]
+redistribution_interval = 300
+trajectory_dump_interval = 1000
+rate_algo = 'TST'
+repetitions = (30, 30, 1)
+species_definitions = {'h': {'type': 'site', 'site_name': 'hcp'}, 'f': {'type': 'site', 'site_name': 'fcc'}, 'CO_g': {'pressure': 1.0000000000000001e-05}, 'O2_g': {'pressure': 5.0}, 'CO2_g': {'pressure': 0.0}}
+rxn_expressions = [
+    'CO_g + *_f -> CO_f',
+    'O2_g + 2*_f <-> O-O_2f -> 2O_f',
+    'O_f + CO_f <-> O-CO_f + *_f -> CO2_g + *_f + *_f',
+    'O_f + *_f -> O_f + *_f',
+    'CO_f + *_f -> CO_f + *_f'
+    ]
+coverage_ratios = [1.0, 0.3333333333333333, 0.3333333333333333, 0.3333333333333333, 1.0, 1.0]
+distributor_type = 'ProcessRandomDistributor'
+solver = 'KMCSolver'
+possible_element_types = ['V', 'O', 'C']
+analysis = ['CoveragesAnalysis', 'FrequencyAnalysis']
+periodic = (True, True, False)
+possible_site_types = ['P']
+corrector = 'ThermodynamicCorrector'
+unitcell_area = 7.15e-20

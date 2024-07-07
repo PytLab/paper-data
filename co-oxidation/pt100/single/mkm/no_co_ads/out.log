@@ -1,0 +1,167 @@
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     rootfinding = MDNewton
+model   INFO     rxn_expressions =
+model   INFO             CO_g + *_t -> CO_t
+model   INFO             O2_g + 2*_t -> 2O_t
+model   INFO             CO_t + O_t <-> CO-O_2t -> CO2_g + 2*_t
+model   INFO     plotter = EnergyProfilePlotter
+model   INFO     max_rootfinding_iterations = 100
+model   INFO     temperature = 500
+model   INFO     unitcell_area = 9e-20
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     species_definitions =
+model   INFO             CO_g: {'pressure': 1.32e-07}
+model   INFO             CO2_g: {'pressure': 1.32e-07}
+model   INFO             *_t: {'site_name': 'top', 'type': 'site', 'total': 1.0}
+model   INFO             O2_g: {'pressure': 5.259999999999999e-07}
+model   INFO     rate_algo = CT
+model   INFO     active_ratio = 0.4444444444444444
+model   INFO     tolerance = 1e-50
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model.solvers.SteadyStateSolver   INFO     entering lsoda ODE integration loop...
+model.solvers.SteadyStateSolver   INFO     start = 0.00  end = 1.40  step = 0.000100
+
+model.solvers.SteadyStateSolver   INFO        process             time(s)                CO_t                 O_t
+model.solvers.SteadyStateSolver   INFO     ----------------------------------------------------------------------
+model.solvers.SteadyStateSolver   INFO           1.43%            0.020000      9.81557447e-08      9.03903805e-02
+model.solvers.SteadyStateSolver   INFO           2.86%            0.040000      5.48965837e-08      1.50873918e-01
+model.solvers.SteadyStateSolver   INFO           4.29%            0.060000      4.07451060e-08      1.93152026e-01
+model.solvers.SteadyStateSolver   INFO           5.71%            0.080000      3.38655771e-08      2.23614382e-01
+model.solvers.SteadyStateSolver   INFO           7.14%            0.100000      2.98889986e-08      2.46045835e-01
+model.solvers.SteadyStateSolver   INFO           8.57%            0.120000      2.73574858e-08      2.62829814e-01
+model.solvers.SteadyStateSolver   INFO          10.00%            0.140000      2.56458301e-08      2.75538605e-01
+model.solvers.SteadyStateSolver   INFO          11.43%            0.160000      2.44407316e-08      2.85248811e-01
+model.solvers.SteadyStateSolver   INFO          12.86%            0.180000      2.35679730e-08      2.92719246e-01
+model.solvers.SteadyStateSolver   INFO          14.29%            0.200000      2.29227512e-08      2.98496986e-01
+model.solvers.SteadyStateSolver   INFO          15.71%            0.220000      2.24389629e-08      3.02983847e-01
+model.solvers.SteadyStateSolver   INFO          17.14%            0.240000      2.20719615e-08      3.06479365e-01
+model.solvers.SteadyStateSolver   INFO          18.57%            0.260000      2.17909895e-08      3.09209194e-01
+model.solvers.SteadyStateSolver   INFO          20.00%            0.280000      2.15745155e-08      3.11345739e-01
+model.solvers.SteadyStateSolver   INFO          21.43%            0.300000      2.14069346e-08      3.13020113e-01
+model.solvers.SteadyStateSolver   INFO          22.86%            0.320000      2.12767125e-08      3.14333690e-01
+model.solvers.SteadyStateSolver   INFO          24.29%            0.340000      2.11751979e-08      3.15365322e-01
+model.solvers.SteadyStateSolver   INFO          25.71%            0.360000      2.10958649e-08      3.16176082e-01
+model.solvers.SteadyStateSolver   INFO          27.14%            0.380000      2.10338324e-08      3.16813662e-01
+model.solvers.SteadyStateSolver   INFO          28.57%            0.400000      2.09851484e-08      3.17315239e-01
+model.solvers.SteadyStateSolver   INFO          30.00%            0.420000      2.09469555e-08      3.17709967e-01
+model.solvers.SteadyStateSolver   INFO          31.43%            0.440000      2.09169595e-08      3.18020678e-01
+model.solvers.SteadyStateSolver   INFO          32.86%            0.460000      2.08933935e-08      3.18265259e-01
+model.solvers.SteadyStateSolver   INFO          34.29%            0.480000      2.08748357e-08      3.18457811e-01
+model.solvers.SteadyStateSolver   INFO          35.71%            0.500000      2.08603267e-08      3.18609499e-01
+model.solvers.SteadyStateSolver   INFO          37.14%            0.520000      2.08486999e-08      3.18729034e-01
+model.solvers.SteadyStateSolver   INFO          38.57%            0.540000      2.08401089e-08      3.18823203e-01
+model.solvers.SteadyStateSolver   INFO          40.00%            0.560000      2.08324678e-08      3.18897380e-01
+model.solvers.SteadyStateSolver   INFO          41.43%            0.580000      2.08271443e-08      3.18955824e-01
+model.solvers.SteadyStateSolver   INFO          42.86%            0.600000      2.08226168e-08      3.19001880e-01
+model.solvers.SteadyStateSolver   INFO          44.29%            0.620000      2.08191004e-08      3.19038171e-01
+model.solvers.SteadyStateSolver   INFO          45.71%            0.640000      2.08165268e-08      3.19066760e-01
+model.solvers.SteadyStateSolver   INFO          47.14%            0.660000      2.08142238e-08      3.19089289e-01
+model.solvers.SteadyStateSolver   INFO          48.57%            0.680000      2.08125556e-08      3.19107050e-01
+model.solvers.SteadyStateSolver   INFO          50.00%            0.700000      2.08112020e-08      3.19121054e-01
+model.solvers.SteadyStateSolver   INFO          51.43%            0.720000      2.08101468e-08      3.19132089e-01
+model.solvers.SteadyStateSolver   INFO          52.86%            0.740000      2.08093135e-08      3.19140789e-01
+model.solvers.SteadyStateSolver   INFO          54.29%            0.760000      2.08086560e-08      3.19147654e-01
+model.solvers.SteadyStateSolver   INFO          55.71%            0.780000      2.08081372e-08      3.19153072e-01
+model.solvers.SteadyStateSolver   INFO          57.14%            0.800000      2.08077291e-08      3.19157334e-01
+model.solvers.SteadyStateSolver   INFO          58.57%            0.820000      2.08074071e-08      3.19160697e-01
+model.solvers.SteadyStateSolver   INFO          60.00%            0.840000      2.08071544e-08      3.19163335e-01
+model.solvers.SteadyStateSolver   INFO          61.43%            0.860000      2.08069559e-08      3.19165408e-01
+model.solvers.SteadyStateSolver   INFO          62.86%            0.880000      2.08067996e-08      3.19167041e-01
+model.solvers.SteadyStateSolver   INFO          64.29%            0.900000      2.08066765e-08      3.19168327e-01
+model.solvers.SteadyStateSolver   INFO          65.71%            0.920000      2.08065786e-08      3.19169350e-01
+model.solvers.SteadyStateSolver   INFO          67.14%            0.940000      2.08065021e-08      3.19170148e-01
+model.solvers.SteadyStateSolver   INFO          68.57%            0.960000      2.08064405e-08      3.19170791e-01
+model.solvers.SteadyStateSolver   INFO          70.00%            0.980000      2.08063930e-08      3.19171287e-01
+model.solvers.SteadyStateSolver   INFO          71.43%            1.000000      2.08063552e-08      3.19171682e-01
+model.solvers.SteadyStateSolver   INFO          72.86%            1.020000      2.08063258e-08      3.19171989e-01
+model.solvers.SteadyStateSolver   INFO          74.29%            1.040000      2.08063032e-08      3.19172225e-01
+model.solvers.SteadyStateSolver   INFO          75.71%            1.060000      2.08062855e-08      3.19172410e-01
+model.solvers.SteadyStateSolver   INFO          77.14%            1.080000      2.08062721e-08      3.19172551e-01
+model.solvers.SteadyStateSolver   INFO          78.57%            1.100000      2.08062615e-08      3.19172661e-01
+model.solvers.SteadyStateSolver   INFO          80.00%            1.120000      2.08062533e-08      3.19172746e-01
+model.solvers.SteadyStateSolver   INFO          81.43%            1.140000      2.08062465e-08      3.19172817e-01
+model.solvers.SteadyStateSolver   INFO          82.86%            1.160000      2.08062410e-08      3.19172875e-01
+model.solvers.SteadyStateSolver   INFO          84.29%            1.180000      2.08062368e-08      3.19172919e-01
+model.solvers.SteadyStateSolver   INFO          85.71%            1.200000      2.08062335e-08      3.19172953e-01
+model.solvers.SteadyStateSolver   INFO          87.14%            1.220000      2.08062303e-08      3.19172986e-01
+model.solvers.SteadyStateSolver   INFO          88.57%            1.240000      2.08062279e-08      3.19173011e-01
+model.solvers.SteadyStateSolver   INFO          90.00%            1.260000      2.08062265e-08      3.19173026e-01
+model.solvers.SteadyStateSolver   INFO          91.43%            1.280000      2.08062251e-08      3.19173041e-01
+model.solvers.SteadyStateSolver   INFO          92.86%            1.300000      2.08062240e-08      3.19173053e-01
+model.solvers.SteadyStateSolver   INFO          94.29%            1.320000      2.08062233e-08      3.19173060e-01
+model.solvers.SteadyStateSolver   INFO          95.71%            1.340000      2.08062232e-08      3.19173061e-01
+model.solvers.SteadyStateSolver   INFO          97.14%            1.360000      2.08062229e-08      3.19173064e-01
+model.solvers.SteadyStateSolver   INFO          98.57%            1.380000      2.08062229e-08      3.19173064e-01
+model.solvers.SteadyStateSolver   INFO         100.00%            1.400000      2.08062230e-08      3.19173063e-01
+model.solvers.SteadyStateSolver   INFO         finish
+
+model.solvers.SteadyStateSolver   INFO     ODE integration trajectory is written to auto_ode_coverages.py.
+model   WARNING  Found redundant keyword argument: solve_ode
+model   INFO     --- Solve Micro-kinetic model ---
+model   INFO     use user-defined coverages as initial guess...
+model   INFO     getting precise steady state coverages...
+model.solvers.SteadyStateSolver   INFO     Entering main loop...
+model.solvers.SteadyStateSolver   INFO     MDNewton Iterator instantiation - success!
+model.solvers.SteadyStateSolver   INFO     initial guess coverage - success
+model.solvers.SteadyStateSolver   INFO     entering Newton Iteration( 1 )...
+model.solvers.SteadyStateSolver   INFO       status           N            residual                norm
+model.solvers.SteadyStateSolver   INFO     ------------------------------------------------------------
+model.solvers.SteadyStateSolver   INFO     in_process         1       1.7942993412e-14       2.3781296794e-14
+model.solvers.SteadyStateSolver   INFO     in_process         2       5.0929358845e-30       6.7437396263e-30
+model.solvers.SteadyStateSolver   INFO     in_process         3       1.3294661582e-60       1.8411336254e-60
+model.solvers.SteadyStateSolver   INFO     success            3       1.3294661582e-60       1.8411336254e-60
+model.solvers.SteadyStateSolver   INFO     Steady State Coverages:
+
+ index     intermediate name        steady state coverage         
+------------------------------------------------------------
+ 00        CO_t                     2.0806224076961384e-08        
+ 01        O_t                      3.1917305171286242e-01        
+------------------------------------------------------------
+
+model.solvers.SteadyStateSolver   INFO     error = 1.329466e-60
+model.solvers.MeanFieldSolver   INFO     
+
+reactions                                k_forward   k_reverse   
+------------------------------------------------------------------
+CO_g + *_t -> CO_t                       9.0236e+07  1.3081e-05  
+O2_g + 2*_t -> 2O_t                      1.6630e+07  5.3980e-10  
+CO_t + O_t <-> CO-O_2t -> CO2_g + 2*_t   1.2212e+09  1.3590e+02  
+------------------------------------------------------------------
+
+model.solvers.MeanFieldSolver   INFO     
+
+reactions                                R_forward   R_reverse   
+------------------------------------------------------------------
+CO_g + *_t -> CO_t                       8.1094e+00  2.7217e-13  
+O2_g + 2*_t -> 2O_t                      4.0547e+00  5.4990e-11  
+CO_t + O_t <-> CO-O_2t -> CO2_g + 2*_t   8.1094e+00  8.3150e-06  
+------------------------------------------------------------------
+
+model.solvers.MeanFieldSolver   INFO     Turnover Frequencies:
+
+ index     gas name                 TOF                           
+------------------------------------------------------------
+ 00        CO2_g                    8.1094029758871873e+00        
+ 01        CO_g                     -8.1094029758871873e+00       
+ 02        O2_g                     -4.0547014879435936e+00       
+------------------------------------------------------------
+
+model.solvers.MeanFieldSolver   INFO     Reversibilities:
+
+ index     elementary reaction                                                   reversibilities               
+----------------------------------------------------------------------------------------------------
+ 00        CO_g + *_t -> CO_t                                                    3.3561807716500733e-14        
+ 01        O2_g + 2*_t -> 2O_t                                                   1.3561972941263935e-11        
+ 02        CO_t + O_t <-> CO-O_2t -> CO2_g + 2*_t                                1.0253473874315398e-06        
+----------------------------------------------------------------------------------------------------
+
+model.MkmRunScript   INFO     Time used: 0 h 0 min 1.135702 sec

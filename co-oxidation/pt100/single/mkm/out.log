@@ -1,0 +1,98 @@
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     active_ratio = 0.4444444444444444
+model   INFO     tolerance = 1e-50
+model   INFO     max_rootfinding_iterations = 100
+model   INFO     plotter = EnergyProfilePlotter
+model   INFO     unitcell_area = 9e-20
+model   INFO     species_definitions =
+model   INFO             *_t: {'site_name': 'top', 'total': 1.0, 'type': 'site'}
+model   INFO             CO2_g: {'pressure': 1.32e-07}
+model   INFO             CO_g: {'pressure': 1.32e-07}
+model   INFO             O2_g: {'pressure': 5.259999999999999e-07}
+model   INFO     temperature = 500
+model   INFO     rxn_expressions =
+model   INFO             CO_g + *_t -> CO_t
+model   INFO             O2_g + 2*_t -> 2O_t
+model   INFO             CO_t + O_t <-> CO-O_2t -> CO2_g + 2*_t
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     rate_algo = CT
+model   INFO     rootfinding = MDNewton
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model.solvers.SteadyStateSolver   INFO     entering lsoda ODE integration loop...
+model.solvers.SteadyStateSolver   INFO     start = 0.00  end = 1.00  step = 0.010000
+
+model.solvers.SteadyStateSolver   INFO        process             time(s)                CO_t                 O_t
+model.solvers.SteadyStateSolver   INFO     ----------------------------------------------------------------------
+model.solvers.SteadyStateSolver   INFO         finish
+
+model.solvers.SteadyStateSolver   INFO     ODE integration trajectory is written to auto_ode_coverages.py.
+model   WARNING  Found redundant keyword argument: solve_ode
+model   INFO     --- Solve Micro-kinetic model ---
+model   INFO     use user-defined coverages as initial guess...
+model   INFO     getting precise steady state coverages...
+model.solvers.SteadyStateSolver   INFO     Entering main loop...
+model.solvers.SteadyStateSolver   INFO     MDNewton Iterator instantiation - success!
+model.solvers.SteadyStateSolver   INFO     initial guess coverage - success
+model.solvers.SteadyStateSolver   INFO     entering Newton Iteration( 1 )...
+model.solvers.SteadyStateSolver   INFO       status           N            residual                norm
+model.solvers.SteadyStateSolver   INFO     ------------------------------------------------------------
+model.solvers.SteadyStateSolver   INFO     in_process         1       3.2880824154e-10       4.3575999227e-10
+model.solvers.SteadyStateSolver   INFO     in_process         2       1.7099045941e-21       2.2637341178e-21
+model.solvers.SteadyStateSolver   INFO     in_process         3       1.5041171889e-43       2.0829197346e-43
+model.solvers.SteadyStateSolver   INFO     in_process         4       2.0667239981e-88       2.8881497178e-88
+model.solvers.SteadyStateSolver   INFO     success            4       2.0667239981e-88       2.8881497178e-88
+model.solvers.SteadyStateSolver   INFO     Steady State Coverages:
+
+ index     intermediate name        steady state coverage         
+------------------------------------------------------------
+ 00        CO_t                     2.0806202769800446e-08        
+ 01        O_t                      3.1917305164755472e-01        
+------------------------------------------------------------
+
+model.solvers.SteadyStateSolver   INFO     error = 2.066724e-88
+model.solvers.MeanFieldSolver   INFO     
+
+reactions                                k_forward   k_reverse   
+------------------------------------------------------------------
+CO_g + *_t -> CO_t                       9.0236e+07  1.3081e-05  
+O2_g + 2*_t -> 2O_t                      1.6630e+07  4.3590e-09  
+CO_t + O_t <-> CO-O_2t -> CO2_g + 2*_t   1.2212e+09  1.2863e-01  
+------------------------------------------------------------------
+
+model.solvers.MeanFieldSolver   INFO     
+
+reactions                                R_forward   R_reverse   
+------------------------------------------------------------------
+CO_g + *_t -> CO_t                       8.1094e+00  2.7217e-13  
+O2_g + 2*_t -> 2O_t                      4.0547e+00  4.4406e-10  
+CO_t + O_t <-> CO-O_2t -> CO2_g + 2*_t   8.1094e+00  7.8703e-09  
+------------------------------------------------------------------
+
+model.solvers.MeanFieldSolver   INFO     Turnover Frequencies:
+
+ index     gas name                 TOF                           
+------------------------------------------------------------
+ 00        CO2_g                    8.1094029766653275e+00        
+ 01        CO_g                     -8.1094029766653275e+00       
+ 02        O2_g                     -4.0547014883326638e+00       
+------------------------------------------------------------
+
+model.solvers.MeanFieldSolver   INFO     Reversibilities:
+
+ index     elementary reaction                                                   reversibilities               
+----------------------------------------------------------------------------------------------------
+ 00        CO_g + *_t -> CO_t                                                    3.3561773343428488e-14        
+ 01        O2_g + 2*_t -> 2O_t                                                   1.0951737794196573e-10        
+ 02        CO_t + O_t <-> CO-O_2t -> CO2_g + 2*_t                                9.7051948786839990e-10        
+----------------------------------------------------------------------------------------------------
+
+model.MkmRunScript   INFO     Time used: 0 h 0 min 0.823244 sec

@@ -1,0 +1,389 @@
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     unitcell_area = 9e-20
+model   INFO     repetitions = (30, 30, 1)
+model   INFO     empty_type = V
+model   INFO     random_generator = MT
+model   INFO     active_ratio = 0.4444444444444444
+model   INFO     temperature = 500
+model   INFO     analysis = ['CoveragesAnalysis', 'TOFAnalysis', 'FrequencyAnalysis']
+model   WARNING  Found redundant parameter 'tools'
+model   INFO     redistribution_interval = 300
+model   INFO     do_redistribution = True
+model   INFO     trajectory_dump_interval = 1600
+model   INFO     possible_element_types = ['O_u', 'O_d', 'O_l', 'O_r', 'V', 'O_s', 'C']
+model   INFO     basis_sites = [[0.0, 0.0, 0.0], [0.0, 0.5, 0.0], [0.5, 0.0, 0.0], [0.5, 0.5, 0.0]]
+model   INFO     possible_site_types = ['P']
+model   INFO     distributor_type = ProcessRandomDistributor
+model   INFO     time_limit = 500000.0
+model   INFO     species_definitions =
+model   INFO             CO2_g: {'pressure': 1.32e-07}
+model   INFO             b: {'site_name': 'bridge', 'type': 'site', 'total': 0.5}
+model   INFO             O2_g: {'pressure': 5.16e-07}
+model   INFO             CO_g: {'pressure': 1.32e-07}
+model   INFO             t: {'site_name': 'top', 'type': 'site', 'total': 0.5}
+model   INFO     periodic = (True, True, False)
+model   INFO     coverage_ratios = [1.0, 0.5, 0.5, 1.0]
+model   INFO     tof_interval = 600
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'seed'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     analysis_interval = [800, 1, 1]
+model   INFO     cell_vectors = [[3.0, 0.0, 0.0], [0.0, 3.0, 0.0], [0.0, 0.0, 3.0]]
+model   INFO     rate_algo = CT
+model   INFO     nstep = 80000
+model   INFO     rxn_expressions =
+model   INFO             CO_g + *_b -> CO_b
+model   INFO             O2_g + 2*_b -> 2O_b
+model   INFO             CO_b + O_b <-> CO-O_2b -> CO2_g + 2*_b
+model   INFO             CO_b + *_t <-> CO_t + *_b -> CO_b + *_t
+model   INFO             O_b + *_t <-> O_t + *_b -> O_b + *_t
+model   INFO     Parsing elementary rxns...
+model   INFO     KMCModel creating...success!
+
+model.parsers.KMCParser   INFO     Total 17 processes dicts read in.
+model.solver.SolverBase   INFO     CO_g + *_b -> CO_b (Gaf=0.0, Gar=2.09, dG=-2.09)
+model.solver.SolverBase   INFO     species type: ['gas', 'site'] -> ['adsorbate']
+model.solver.SolverBase   INFO     R(forward) = 11.911107872734366 s^-1 (Collision Theory)
+model.solver.SolverBase   INFO     Get equivalent TST barrier from CT: 1.1847588748994426 eV
+model.solver.SolverBase   INFO     Get equivalent reverse barrier: 1.77598634433225 eV
+model.solver.SolverBase   INFO     R(reverse) = 1.3081000299026897e-05 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.5, 0.5, 0.0], [1.0, 0.0, 0.0], [0.5, -0.5, 0.0], [0.5, 0.0, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_g + *_b -> CO_b (Gaf=0.0, Gar=2.09, dG=-2.09)
+model.solver.SolverBase   INFO     species type: ['gas', 'site'] -> ['adsorbate']
+model.solver.SolverBase   INFO     R(forward) = 11.911107872734366 s^-1 (Collision Theory)
+model.solver.SolverBase   INFO     Get equivalent TST barrier from CT: 1.1847588748994426 eV
+model.solver.SolverBase   INFO     Get equivalent reverse barrier: 1.77598634433225 eV
+model.solver.SolverBase   INFO     R(reverse) = 1.3081000299026897e-05 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.5, 0.5, 0.0], [0.0, 1.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.5, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O2_g + 2*_b -> 2O_b (Gaf=0.07, Gar=2.55, dG=-2.48)
+model.solver.SolverBase   INFO     species type: ['gas', 'site'] -> ['adsorbate']
+model.solver.SolverBase   INFO     R(forward) = 8.581227095697844 s^-1 (Collision Theory)
+model.solver.SolverBase   INFO     Get equivalent TST barrier from CT: 1.1988867534447574 eV
+model.solver.SolverBase   INFO     Get equivalent reverse barrier: 2.2109669156817713 eV
+model.solver.SolverBase   INFO     R(reverse) = 5.397955846808029e-10 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.5, 0.5, 0.0], [0.0, 1.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.5, 0.0], [1.0, 0.0, 0.0], [1.0, 1.0, 0.0], [1.5, 0.5, 0.0], [1.0, 0.5, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O2_g + 2*_b -> 2O_b (Gaf=0.07, Gar=2.55, dG=-2.48)
+model.solver.SolverBase   INFO     species type: ['gas', 'site'] -> ['adsorbate']
+model.solver.SolverBase   INFO     R(forward) = 8.581227095697844 s^-1 (Collision Theory)
+model.solver.SolverBase   INFO     Get equivalent TST barrier from CT: 1.1988867534447574 eV
+model.solver.SolverBase   INFO     Get equivalent reverse barrier: 2.2109669156817713 eV
+model.solver.SolverBase   INFO     R(reverse) = 5.397955846808029e-10 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.5, 0.5, 0.0], [1.0, 0.0, 0.0], [0.5, -0.5, 0.0], [0.5, 0.0, 0.0], [0.0, 1.0, 0.0], [0.5, 1.5, 0.0], [1.0, 1.0, 0.0], [0.5, 1.0, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_b + O_b <-> CO-O_2b -> CO2_g + 2*_b (Gaf=0.39, Gar=0.06, dG=0.33)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'adsorbate'] -> ['gas', 'site']
+model.solver.SolverBase   INFO     R(forward) = 1221152322.9673042 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.5, 0.5, 0.0], [1.0, 0.0, 0.0], [0.5, -0.5, 0.0], [0.5, 0.0, 0.0], [-0.5, 0.5, 0.0], [0.0, 1.0, 0.0], [0.0, 0.5, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'C', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'C', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_b + O_b <-> CO-O_2b -> CO2_g + 2*_b (Gaf=0.39, Gar=0.06, dG=0.33)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'adsorbate'] -> ['gas', 'site']
+model.solver.SolverBase   INFO     R(forward) = 1221152322.9673042 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.5, 0.5, 0.0], [1.0, 0.0, 0.0], [0.5, -0.5, 0.0], [0.5, 0.0, 0.0], [-0.5, 0.5, 0.0], [0.0, 1.0, 0.0], [0.0, 0.5, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_b + O_b <-> CO-O_2b -> CO2_g + 2*_b (Gaf=0.39, Gar=0.06, dG=0.33)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'adsorbate'] -> ['gas', 'site']
+model.solver.SolverBase   INFO     R(forward) = 1221152322.9673042 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.5, 0.5, 0.0], [1.0, 0.0, 0.0], [0.5, -0.5, 0.0], [0.5, 0.0, 0.0], [1.0, 1.0, 0.0], [1.5, 0.5, 0.0], [1.0, 0.5, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'C', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'C', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_b + O_b <-> CO-O_2b -> CO2_g + 2*_b (Gaf=0.39, Gar=0.06, dG=0.33)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'adsorbate'] -> ['gas', 'site']
+model.solver.SolverBase   INFO     R(forward) = 1221152322.9673042 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.5, 0.5, 0.0], [1.0, 0.0, 0.0], [0.5, -0.5, 0.0], [0.5, 0.0, 0.0], [1.0, 1.0, 0.0], [1.5, 0.5, 0.0], [1.0, 0.5, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_b + O_b <-> CO-O_2b -> CO2_g + 2*_b (Gaf=0.39, Gar=0.06, dG=0.33)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'adsorbate'] -> ['gas', 'site']
+model.solver.SolverBase   INFO     R(forward) = 1221152322.9673042 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.5, 0.5, 0.0], [0.0, 1.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.5, 0.0], [0.5, 1.5, 0.0], [1.0, 1.0, 0.0], [0.5, 1.0, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'C', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'C', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_b + O_b <-> CO-O_2b -> CO2_g + 2*_b (Gaf=0.39, Gar=0.06, dG=0.33)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'adsorbate'] -> ['gas', 'site']
+model.solver.SolverBase   INFO     R(forward) = 1221152322.9673042 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.5, 0.5, 0.0], [0.0, 1.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.5, 0.0], [0.5, 1.5, 0.0], [1.0, 1.0, 0.0], [0.5, 1.0, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_b + O_b <-> CO-O_2b -> CO2_g + 2*_b (Gaf=0.39, Gar=0.06, dG=0.33)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'adsorbate'] -> ['gas', 'site']
+model.solver.SolverBase   INFO     R(forward) = 1221152322.9673042 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.5, 0.5, 0.0], [0.0, 1.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.5, 0.0], [-1.0, 1.0, 0.0], [-0.5, 1.5, 0.0], [-0.5, 1.0, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'C', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'C', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_b + O_b <-> CO-O_2b -> CO2_g + 2*_b (Gaf=0.39, Gar=0.06, dG=0.33)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'adsorbate'] -> ['gas', 'site']
+model.solver.SolverBase   INFO     R(forward) = 1221152322.9673042 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.5, 0.5, 0.0], [0.0, 1.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.5, 0.0], [-1.0, 1.0, 0.0], [-0.5, 1.5, 0.0], [-0.5, 1.0, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_b + *_t <-> CO_t + *_b -> CO_b + *_t (Gaf=0.17, Gar=0.17, dG=0.0)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'site'] -> ['adsorbate', 'site']
+model.solver.SolverBase   INFO     R(forward) = 201498799652.10812 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 201498799652.10812 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.5, 0.0, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['C', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'C']
+model.solvers.KMCSolver   INFO         \['C', 'V']
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.0, 0.5, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['C', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'C']
+model.solvers.KMCSolver   INFO         \['C', 'V']
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.5, 0.0, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['C', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'C']
+model.solvers.KMCSolver   INFO         \['C', 'V']
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.0, -0.5, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['C', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'C']
+model.solvers.KMCSolver   INFO         \['C', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_b + *_t <-> O_t + *_b -> O_b + *_t (Gaf=1.15, Gar=1.15, dG=0.0)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'site'] -> ['adsorbate', 'site']
+model.solver.SolverBase   INFO     R(forward) = 26.687397959313124 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 26.687397959313124 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.5, 0.5, 0.0], [1.0, 0.0, 0.0], [0.5, -0.5, 0.0], [0.5, 0.0, 0.0], [1.5, 0.5, 0.0], [2.0, 0.0, 0.0], [1.5, -0.5, 0.0], [1.5, 0.0, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_b + *_t <-> O_t + *_b -> O_b + *_t (Gaf=1.15, Gar=1.15, dG=0.0)
+model.solver.SolverBase   INFO     species type: ['adsorbate', 'site'] -> ['adsorbate', 'site']
+model.solver.SolverBase   INFO     R(forward) = 26.687397959313124 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 26.687397959313124 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.5, 0.5, 0.0], [0.0, 1.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.5, 0.0], [0.0, -1.0, 0.0], [-0.5, -0.5, 0.0], [0.5, -0.5, 0.0], [0.0, -0.5, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O_s']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'O_s', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_g + *_b -> CO_b (Gaf=0.0, Gar=2.09, dG=-2.09)
+model.solver.SolverBase   INFO     species type: ['gas', 'site'] -> ['adsorbate']
+model.solver.SolverBase   INFO     R(forward) = 11.911107872734366 s^-1 (Collision Theory)
+model.solver.SolverBase   INFO     Get equivalent TST barrier from CT: 1.1847588748994426 eV
+model.solver.SolverBase   INFO     Get equivalent reverse barrier: 1.77598634433225 eV
+model.solver.SolverBase   INFO     R(reverse) = 1.3081000299026897e-05 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [0.5, 0.5, 0.0], [1.0, 0.0, 0.0], [0.5, -0.5, 0.0], [0.5, 0.0, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_g + *_b -> CO_b (Gaf=0.0, Gar=2.09, dG=-2.09)
+model.solver.SolverBase   INFO     species type: ['gas', 'site'] -> ['adsorbate']
+model.solver.SolverBase   INFO     R(forward) = 11.911107872734366 s^-1 (Collision Theory)
+model.solver.SolverBase   INFO     Get equivalent TST barrier from CT: 1.1847588748994426 eV
+model.solver.SolverBase   INFO     Get equivalent reverse barrier: 1.77598634433225 eV
+model.solver.SolverBase   INFO     R(reverse) = 1.3081000299026897e-05 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.5, 0.5, 0.0], [0.0, 1.0, 0.0], [0.5, 0.5, 0.0], [0.0, 0.5, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     
+
+model.solvers.KMCSolver   INFO     interactions script written to auto_kmc_model.py
+model.solvers.KMCSolver   INFO     script auto_kmc_model.py created.
+model.solvers.KMCSolver   INFO     
+model.solvers.KMCSolver   INFO     Entering KMCLibX main kMC loop...
+KMCLibX.KMCLatticeModel   INFO     
+KMCLibX.KMCLatticeModel   INFO     setting up the backend C++ object.
+KMCLibX.KMCLatticeModel   INFO     Runing for 80,000 steps, starting from time: 0.000000
+
+model.solvers.KMCSolver.FrequencyAnalysis   INFO     TOF analysis start at time = 8.893633e-06
+KMCLibX.KMCLatticeModel   INFO     [  2%] [  0.00%] 1,600 steps executed. time: 00:00:00 (2.85e-02) delta: 5.54538e-05
+KMCLibX.KMCLatticeModel   INFO     [  4%] [  0.00%] 3,200 steps executed. time: 00:00:00 (5.72e-02) delta: 1.39612e-05
+KMCLibX.KMCLatticeModel   INFO     [  6%] [  0.00%] 4,800 steps executed. time: 00:00:00 (8.41e-02) delta: 5.02766e-05
+KMCLibX.KMCLatticeModel   INFO     [  6%] [  0.00%] 108 fast species are redistributed. time: 00:00:00 (8.41e-02)
+KMCLibX.KMCLatticeModel   INFO     [  8%] [  0.00%] 6,400 steps executed. time: 00:00:00 (1.12e-01) delta: 2.48406e-05
+KMCLibX.KMCLatticeModel   INFO     [ 10%] [  0.00%] 8,000 steps executed. time: 00:00:00 (1.40e-01) delta: 1.41749e-05
+KMCLibX.KMCLatticeModel   INFO     [ 12%] [  0.00%] 9,600 steps executed. time: 00:00:00 (1.69e-01) delta: 4.54058e-10
+KMCLibX.KMCLatticeModel   INFO     [ 12%] [  0.00%] 68 fast species are redistributed. time: 00:00:00 (1.69e-01)
+KMCLibX.KMCLatticeModel   INFO     [ 14%] [  0.00%] 11,200 steps executed. time: 00:00:00 (1.96e-01) delta: 6.83976e-06
+KMCLibX.KMCLatticeModel   INFO     [ 16%] [  0.00%] 12,800 steps executed. time: 00:00:00 (2.25e-01) delta: 2.89565e-05
+KMCLibX.KMCLatticeModel   INFO     [ 18%] [  0.00%] 14,400 steps executed. time: 00:00:00 (2.54e-01) delta: 7.10872e-06
+KMCLibX.KMCLatticeModel   INFO     [ 18%] [  0.00%] 28 fast species are redistributed. time: 00:00:00 (2.54e-01)
+KMCLibX.KMCLatticeModel   INFO     [ 20%] [  0.00%] 16,000 steps executed. time: 00:00:00 (2.83e-01) delta: 1.59389e-05
+KMCLibX.KMCLatticeModel   INFO     [ 22%] [  0.00%] 17,600 steps executed. time: 00:00:00 (3.12e-01) delta: 7.71226e-06
+KMCLibX.KMCLatticeModel   INFO     [ 24%] [  0.00%] 19,200 steps executed. time: 00:00:00 (3.43e-01) delta: 2.32874e-05
+KMCLibX.KMCLatticeModel   INFO     [ 24%] [  0.00%] 50 fast species are redistributed. time: 00:00:00 (3.43e-01)
+KMCLibX.KMCLatticeModel   INFO     [ 26%] [  0.00%] 20,800 steps executed. time: 00:00:00 (3.69e-01) delta: 6.00560e-06
+KMCLibX.KMCLatticeModel   INFO     [ 28%] [  0.00%] 22,400 steps executed. time: 00:00:00 (3.98e-01) delta: 1.04804e-05
+KMCLibX.KMCLatticeModel   INFO     [ 30%] [  0.00%] 24,000 steps executed. time: 00:00:00 (4.26e-01) delta: 1.37703e-05
+KMCLibX.KMCLatticeModel   INFO     [ 30%] [  0.00%] 80 fast species are redistributed. time: 00:00:00 (4.26e-01)
+KMCLibX.KMCLatticeModel   INFO     [ 32%] [  0.00%] 25,600 steps executed. time: 00:00:00 (4.54e-01) delta: 4.02250e-05
+KMCLibX.KMCLatticeModel   INFO     [ 34%] [  0.00%] 27,200 steps executed. time: 00:00:00 (4.82e-01) delta: 3.67257e-05
+KMCLibX.KMCLatticeModel   INFO     [ 36%] [  0.00%] 28,800 steps executed. time: 00:00:00 (5.10e-01) delta: 1.18497e-05
+KMCLibX.KMCLatticeModel   INFO     [ 36%] [  0.00%] 26 fast species are redistributed. time: 00:00:00 (5.10e-01)
+KMCLibX.KMCLatticeModel   INFO     [ 38%] [  0.00%] 30,400 steps executed. time: 00:00:00 (5.40e-01) delta: 7.65439e-06
+KMCLibX.KMCLatticeModel   INFO     [ 40%] [  0.00%] 32,000 steps executed. time: 00:00:00 (5.70e-01) delta: 1.81557e-05
+KMCLibX.KMCLatticeModel   INFO     [ 42%] [  0.00%] 33,600 steps executed. time: 00:00:00 (5.99e-01) delta: 5.04827e-11
+KMCLibX.KMCLatticeModel   INFO     [ 42%] [  0.00%] 18 fast species are redistributed. time: 00:00:00 (5.99e-01)
+KMCLibX.KMCLatticeModel   INFO     [ 44%] [  0.00%] 35,200 steps executed. time: 00:00:00 (6.29e-01) delta: 1.54994e-05
+KMCLibX.KMCLatticeModel   INFO     [ 46%] [  0.00%] 36,800 steps executed. time: 00:00:00 (6.58e-01) delta: 6.56486e-05
+KMCLibX.KMCLatticeModel   INFO     [ 48%] [  0.00%] 38,400 steps executed. time: 00:00:00 (6.86e-01) delta: 1.56965e-05
+KMCLibX.KMCLatticeModel   INFO     [ 48%] [  0.00%] 50 fast species are redistributed. time: 00:00:00 (6.86e-01)
+KMCLibX.KMCLatticeModel   INFO     [ 50%] [  0.00%] 40,000 steps executed. time: 00:00:00 (7.14e-01) delta: 6.96758e-10
+KMCLibX.KMCLatticeModel   INFO     [ 52%] [  0.00%] 41,600 steps executed. time: 00:00:00 (7.44e-01) delta: 3.68904e-05
+KMCLibX.KMCLatticeModel   INFO     [ 54%] [  0.00%] 43,200 steps executed. time: 00:00:00 (7.72e-01) delta: 4.74298e-05
+KMCLibX.KMCLatticeModel   INFO     [ 54%] [  0.00%] 30 fast species are redistributed. time: 00:00:00 (7.72e-01)
+KMCLibX.KMCLatticeModel   INFO     [ 56%] [  0.00%] 44,800 steps executed. time: 00:00:00 (8.02e-01) delta: 8.36108e-10
+KMCLibX.KMCLatticeModel   INFO     [ 57%] [  0.00%] 46,400 steps executed. time: 00:00:00 (8.31e-01) delta: 5.73185e-11
+KMCLibX.KMCLatticeModel   INFO     [ 60%] [  0.00%] 48,000 steps executed. time: 00:00:00 (8.59e-01) delta: 4.17836e-05
+KMCLibX.KMCLatticeModel   INFO     [ 60%] [  0.00%] 24 fast species are redistributed. time: 00:00:00 (8.59e-01)
+KMCLibX.KMCLatticeModel   INFO     [ 62%] [  0.00%] 49,600 steps executed. time: 00:00:00 (8.89e-01) delta: 7.07227e-06
+KMCLibX.KMCLatticeModel   INFO     [ 64%] [  0.00%] 51,200 steps executed. time: 00:00:00 (9.17e-01) delta: 2.44510e-11
+KMCLibX.KMCLatticeModel   INFO     [ 66%] [  0.00%] 52,800 steps executed. time: 00:00:00 (9.46e-01) delta: 4.92958e-06
+KMCLibX.KMCLatticeModel   INFO     [ 66%] [  0.00%] 40 fast species are redistributed. time: 00:00:00 (9.46e-01)
+KMCLibX.KMCLatticeModel   INFO     [ 68%] [  0.00%] 54,400 steps executed. time: 00:00:00 (9.73e-01) delta: 1.19030e-09
+KMCLibX.KMCLatticeModel   INFO     [ 70%] [  0.00%] 56,000 steps executed. time: 00:00:01 (1.00e+00) delta: 4.19501e-05
+KMCLibX.KMCLatticeModel   INFO     [ 72%] [  0.00%] 57,600 steps executed. time: 00:00:01 (1.03e+00) delta: 7.19567e-06
+KMCLibX.KMCLatticeModel   INFO     [ 72%] [  0.00%] 24 fast species are redistributed. time: 00:00:01 (1.03e+00)
+KMCLibX.KMCLatticeModel   INFO     [ 74%] [  0.00%] 59,200 steps executed. time: 00:00:01 (1.06e+00) delta: 2.22009e-05
+KMCLibX.KMCLatticeModel   INFO     [ 76%] [  0.00%] 60,800 steps executed. time: 00:00:01 (1.09e+00) delta: 5.19852e-06
+KMCLibX.KMCLatticeModel   INFO     [ 78%] [  0.00%] 62,400 steps executed. time: 00:00:01 (1.12e+00) delta: 1.93586e-06
+KMCLibX.KMCLatticeModel   INFO     [ 78%] [  0.00%] 48 fast species are redistributed. time: 00:00:01 (1.12e+00)
+KMCLibX.KMCLatticeModel   INFO     [ 80%] [  0.00%] 64,000 steps executed. time: 00:00:01 (1.14e+00) delta: 2.48747e-05
+KMCLibX.KMCLatticeModel   INFO     [ 82%] [  0.00%] 65,600 steps executed. time: 00:00:01 (1.17e+00) delta: 1.61717e-05
+KMCLibX.KMCLatticeModel   INFO     [ 84%] [  0.00%] 67,200 steps executed. time: 00:00:01 (1.20e+00) delta: 5.12106e-06
+KMCLibX.KMCLatticeModel   INFO     [ 84%] [  0.00%] 50 fast species are redistributed. time: 00:00:01 (1.20e+00)
+KMCLibX.KMCLatticeModel   INFO     [ 86%] [  0.00%] 68,800 steps executed. time: 00:00:01 (1.23e+00) delta: 6.53506e-05
+KMCLibX.KMCLatticeModel   INFO     [ 88%] [  0.00%] 70,400 steps executed. time: 00:00:01 (1.26e+00) delta: 1.84320e-09
+KMCLibX.KMCLatticeModel   INFO     [ 90%] [  0.00%] 72,000 steps executed. time: 00:00:01 (1.29e+00) delta: 1.11016e-06
+KMCLibX.KMCLatticeModel   INFO     [ 90%] [  0.00%] 66 fast species are redistributed. time: 00:00:01 (1.29e+00)
+KMCLibX.KMCLatticeModel   INFO     [ 92%] [  0.00%] 73,600 steps executed. time: 00:00:01 (1.32e+00) delta: 1.00469e-04
+KMCLibX.KMCLatticeModel   INFO     [ 94%] [  0.00%] 75,200 steps executed. time: 00:00:01 (1.35e+00) delta: 9.13292e-08
+KMCLibX.KMCLatticeModel   INFO     [ 96%] [  0.00%] 76,800 steps executed. time: 00:00:01 (1.37e+00) delta: 1.33624e-05
+KMCLibX.KMCLatticeModel   INFO     [ 96%] [  0.00%] 58 fast species are redistributed. time: 00:00:01 (1.37e+00)
+KMCLibX.KMCLatticeModel   INFO     [ 98%] [  0.00%] 78,400 steps executed. time: 00:00:01 (1.40e+00) delta: 1.81754e-09
+KMCLibX.KMCLatticeModel   INFO     [100%] [  0.00%] 80,000 steps executed. time: 00:00:01 (1.43e+00) delta: 6.35968e-05
+KMCLibX.KMCLatticeModel   INFO     Max kMC step reached, kMC iteration finish.
+model.solvers.KMCSolver.CoveragesAnalysis   INFO     coverages informations are written to auto_coverages.py
+model.solvers.KMCSolver.FrequencyAnalysis   INFO     frequency informations are written to auto_frequency.py
+model.KMCModelRun   INFO     Time used: 0 h 0 min 26.955273 sec

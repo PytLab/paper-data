@@ -1,0 +1,38 @@
+#!/usr/bin/env python
+rxn_expressions = [
+    'CH4_g + *_a + *_c <-> CH3-H_c + *_a -> CH3_c + H_a',
+    'CH3_c + *_b <-> CH3-_c + *_b -> CH3_b + *_c',
+    'O2_g + *_c + CH3_b -> O2_c + CH3_b',
+    'O2_c + CH3_b <-> OO-H_c + CH2_b -> OOH_c + CH2_b',
+    'OOH_c + H_a + CH2_b <-> OOH-H_c + *_a + CH2_b -> H2O_g + OCH2_b + *_a + *_c',
+    'OCH2_b + *_c <-> OCH2-_b + *_c -> *_b + OCH2_c',
+    'OCH2_c + *_a + *_b <-> OCH-H_c + *_a + *_b -> CHO_b + *_c + H_a',
+    'O2_g + CHO_b + *_c -> O2_c + CHO_b',
+    'O2_c + CHO_b + O_v <-> OO-H_c + CO_b + O_v -> OOH_c + CO2_g + *_b + *_v',
+    'OOH_c + H_a + *_v -> H2O_g + *_c + *_a + O_v',
+]
+
+# Gas pressure.
+species_definitions = {}
+species_definitions['CH4_g'] = {'pressure': 0.01}
+species_definitions['O2_g'] = {'pressure': 0.2}
+species_definitions['CO2_g'] = {'pressure': 0.01}
+species_definitions['H2O_g'] = {'pressure': 0.02}
+
+# Site info.
+species_definitions['f'] = {'site_name': 'fcc', 'type': 'site'}
+species_definitions['h'] = {'site_name': 'hcp', 'type': 'site'}
+
+# Temperature.
+temperature = 732.15  # K
+
+# Lattice information.
+surface_name = 'Co3O4-110'
+
+# KMC model attributes.
+# specify tools for model to use
+parser = 'RelativeEnergyParser'  # default
+solver = 'SteadyStateSolver'
+corrector = "ThermodynamicCorrector"
+rate_algo = 'TST'
+

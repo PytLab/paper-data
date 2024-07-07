@@ -1,0 +1,739 @@
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     active_ratio = 0.333333333333
+model   INFO     empty_type = V
+model   INFO     random_generator = MT
+model   WARNING  Found redundant parameter 'seed'
+model   INFO     basis_sites = [[0.0, 0.0, 0.0], [0.0, 0.5, 0.0], [0.5, 0.0, 0.0], [0.5, 0.5, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0]]
+model   INFO     cell_vectors = [[1.0, 0.0, 0.0], [0.5, 0.87, 0.0], [0.0, 0.0, 1.0]]
+model   INFO     time_limit = 100.0
+model   INFO     nstep = 5000
+model   INFO     temperature = 500
+model   INFO     do_redistribution = True
+model   INFO     analysis_interval = [50, 1]
+model   INFO     redistribution_interval = 300
+model   INFO     trajectory_dump_interval = 100
+model   INFO     rate_algo = TST
+model   INFO     repetitions = (30, 30, 1)
+model   INFO     species_definitions =
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             CO_g: {'pressure': 1e-05}
+model   INFO             O2_g: {'pressure': 5.0}
+model   INFO             CO2_g: {'pressure': 1e-07}
+model   INFO     rxn_expressions =
+model   INFO             CO_g + *_f -> CO_f
+model   INFO             O2_g + 2*_f <-> O-O_2f -> 2O_f
+model   INFO             O_f + CO_f <-> O-CO_f + *_f -> CO2_g + *_f + *_f
+model   INFO             O_f + *_f -> O_f + *_f
+model   INFO             CO_f + *_f -> CO_f + *_f
+model   INFO     coverage_ratios = [1.0, 0.3333333333333333, 0.3333333333333333, 0.3333333333333333, 1.0, 1.0]
+model   INFO     distributor_type = ProcessRandomDistributor
+model   INFO     possible_element_types = ['V', 'O', 'C']
+model   INFO     analysis = ['CoveragesAnalysis', 'FrequencyAnalysis']
+model   INFO     periodic = (True, True, False)
+model   INFO     possible_site_types = ['P']
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     unitcell_area = 7.15e-20
+model   INFO     Parsing elementary rxns...
+model   INFO     KMCModel creating...success!
+
+model.parsers.KMCParser   INFO     Total 15 processes dicts read in.
+model.solver.SolverBase   INFO     CO_g + *_f -> CO_f (Gaf=0.3, Gar=1.04, dG=-0.74)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 9861205382.04 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 98612.0538204 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O2_g + 2*_f <-> O-O_2f -> 2O_f (Gaf=0.98, Gar=3.38, dG=-2.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1379.84716706 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 6899.23583531 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [1.0, 1.0, 0.0], [1.6666666666666667, 0.6666666666666666, 0.0], [2.0, 0.0, 0.0], [1.6666666666666667, -0.3333333333333333, 0.0], [1.0, 0.5, 0.0], [1.5, 0.5, 0.0], [1.5, 0.0, 0.0], [1.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O2_g + 2*_f <-> O-O_2f -> 2O_f (Gaf=0.98, Gar=3.38, dG=-2.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1379.84716706 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 6899.23583531 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [0.0, 2.0, 0.0], [0.6666666666666666, 1.6666666666666667, 0.0], [1.0, 1.0, 0.0], [0.0, 1.5, 0.0], [0.5, 1.5, 0.0], [0.5, 1.0, 0.0], [0.3333333333333333, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O2_g + 2*_f <-> O-O_2f -> 2O_f (Gaf=0.98, Gar=3.38, dG=-2.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1379.84716706 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 6899.23583531 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-1.0, 1.0, 0.0], [-1.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 2.0, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 1.5, 0.0], [-0.5, 1.5, 0.0], [-0.5, 1.0, 0.0], [-0.6666666666666666, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + CO_f <-> O-CO_f + *_f -> CO2_g + *_f + *_f (Gaf=0.82, Gar=2.22, dG=-1.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-10 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-17 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [1.0, 1.0, 0.0], [1.6666666666666667, 0.6666666666666666, 0.0], [2.0, 0.0, 0.0], [1.6666666666666667, -0.3333333333333333, 0.0], [1.0, 0.5, 0.0], [1.5, 0.5, 0.0], [1.5, 0.0, 0.0], [1.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + CO_f <-> O-CO_f + *_f -> CO2_g + *_f + *_f (Gaf=0.82, Gar=2.22, dG=-1.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-10 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-17 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [0.0, 2.0, 0.0], [0.6666666666666666, 1.6666666666666667, 0.0], [1.0, 1.0, 0.0], [0.0, 1.5, 0.0], [0.5, 1.5, 0.0], [0.5, 1.0, 0.0], [0.3333333333333333, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + CO_f <-> O-CO_f + *_f -> CO2_g + *_f + *_f (Gaf=0.82, Gar=2.22, dG=-1.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-10 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-17 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-1.0, 1.0, 0.0], [-1.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 2.0, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 1.5, 0.0], [-0.5, 1.5, 0.0], [-0.5, 1.0, 0.0], [-0.6666666666666666, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_f + *_f -> CO_f + *_f (Gaf=0.19, Gar=0.19, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [1.0, 1.0, 0.0], [1.6666666666666667, 0.6666666666666666, 0.0], [2.0, 0.0, 0.0], [1.6666666666666667, -0.3333333333333333, 0.0], [1.0, 0.5, 0.0], [1.5, 0.5, 0.0], [1.5, 0.0, 0.0], [1.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_f + *_f -> CO_f + *_f (Gaf=0.19, Gar=0.19, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [0.0, 2.0, 0.0], [0.6666666666666666, 1.6666666666666667, 0.0], [1.0, 1.0, 0.0], [0.0, 1.5, 0.0], [0.5, 1.5, 0.0], [0.5, 1.0, 0.0], [0.3333333333333333, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_f + *_f -> CO_f + *_f (Gaf=0.19, Gar=0.19, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-1.0, 1.0, 0.0], [-1.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 2.0, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 1.5, 0.0], [-0.5, 1.5, 0.0], [-0.5, 1.0, 0.0], [-0.6666666666666666, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + *_f -> O_f + *_f (Gaf=1.41, Gar=1.41, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [1.0, 1.0, 0.0], [1.6666666666666667, 0.6666666666666666, 0.0], [2.0, 0.0, 0.0], [1.6666666666666667, -0.3333333333333333, 0.0], [1.0, 0.5, 0.0], [1.5, 0.5, 0.0], [1.5, 0.0, 0.0], [1.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + *_f -> O_f + *_f (Gaf=1.41, Gar=1.41, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [0.0, 2.0, 0.0], [0.6666666666666666, 1.6666666666666667, 0.0], [1.0, 1.0, 0.0], [0.0, 1.5, 0.0], [0.5, 1.5, 0.0], [0.5, 1.0, 0.0], [0.3333333333333333, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + *_f -> O_f + *_f (Gaf=1.41, Gar=1.41, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-1.0, 1.0, 0.0], [-1.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 2.0, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 1.5, 0.0], [-0.5, 1.5, 0.0], [-0.5, 1.0, 0.0], [-0.6666666666666666, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_g + *_f -> CO_f (Gaf=0.3, Gar=1.04, dG=-0.74)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 9861205382.04 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 98612.0538204 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_g + *_f -> CO_f (Gaf=0.3, Gar=1.04, dG=-0.74)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 9861205382.04 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 98612.0538204 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     
+
+model.solvers.KMCSolver   INFO     interactions script written to auto_kmc_model.py
+model.solvers.KMCSolver   INFO     script auto_kmc_model.py created.
+model.solvers.KMCSolver   INFO     
+model.solvers.KMCSolver   INFO     Entering KMCLibX main kMC loop...
+KMCLibX.KMCLatticeModel   INFO     
+KMCLibX.KMCLatticeModel   INFO     setting up the backend C++ object.
+KMCLibX.KMCLatticeModel   INFO     Runing for 5,000 steps, starting from time: 0.000000
+
+model.solvers.KMCSolver.FrequencyAnalysis   INFO     TOF analysis start at time = 3.055105e-09
+KMCLibX.KMCLatticeModel   INFO     [  2%] [  0.00%] 100 steps executed. time: 00:00:00 (1.05e-06) delta: 2.20482e-08
+KMCLibX.KMCLatticeModel   INFO     [  4%] [  0.00%] 200 steps executed. time: 00:00:00 (2.29e-06) delta: 1.61662e-08
+KMCLibX.KMCLatticeModel   INFO     [  6%] [  0.00%] 300 steps executed. time: 00:00:00 (3.51e-06) delta: 7.19222e-09
+KMCLibX.KMCLatticeModel   INFO     [  6%] [  0.00%] 644 fast species are redistributed. time: 00:00:00 (3.51e-06)
+KMCLibX.KMCLatticeModel   INFO     [  8%] [  0.00%] 400 steps executed. time: 00:00:00 (4.75e-06) delta: 1.10129e-09
+KMCLibX.KMCLatticeModel   INFO     [ 10%] [  0.00%] 500 steps executed. time: 00:00:00 (6.79e-06) delta: 2.30164e-08
+KMCLibX.KMCLatticeModel   INFO     [ 12%] [  0.00%] 600 steps executed. time: 00:00:00 (8.90e-06) delta: 3.45973e-08
+KMCLibX.KMCLatticeModel   INFO     [ 12%] [  0.00%] 1068 fast species are redistributed. time: 00:00:00 (8.90e-06)
+KMCLibX.KMCLatticeModel   INFO     [ 14%] [  0.00%] 700 steps executed. time: 00:00:00 (1.19e-05) delta: 4.46328e-08
+KMCLibX.KMCLatticeModel   INFO     [ 16%] [  0.00%] 800 steps executed. time: 00:00:00 (1.48e-05) delta: 2.93574e-09
+KMCLibX.KMCLatticeModel   INFO     [ 18%] [  0.00%] 900 steps executed. time: 00:00:00 (1.87e-05) delta: 6.59345e-08
+KMCLibX.KMCLatticeModel   INFO     [ 18%] [  0.00%] 1086 fast species are redistributed. time: 00:00:00 (1.87e-05)
+KMCLibX.KMCLatticeModel   INFO     [ 20%] [  0.00%] 1,000 steps executed. time: 00:00:00 (2.24e-05) delta: 6.61127e-08
+KMCLibX.KMCLatticeModel   INFO     [ 22%] [  0.00%] 1,100 steps executed. time: 00:00:00 (2.70e-05) delta: 5.15213e-08
+KMCLibX.KMCLatticeModel   INFO     [ 24%] [  0.00%] 1,200 steps executed. time: 00:00:00 (3.58e-05) delta: 1.94329e-07
+KMCLibX.KMCLatticeModel   INFO     [ 24%] [  0.00%] 580 fast species are redistributed. time: 00:00:00 (3.58e-05)
+KMCLibX.KMCLatticeModel   INFO     [ 26%] [  0.00%] 1,300 steps executed. time: 00:00:00 (5.59e-05) delta: 4.77083e-07
+KMCLibX.KMCLatticeModel   INFO     [ 28%] [  0.00%] 1,400 steps executed. time: 00:00:00 (2.00e-04) delta: 6.59918e-07
+KMCLibX.KMCLatticeModel   INFO     [ 30%] [  0.00%] 1,500 steps executed. time: 00:00:00 (3.51e-04) delta: 5.02659e-07
+KMCLibX.KMCLatticeModel   INFO     [ 30%] [  0.00%] 84 fast species are redistributed. time: 00:00:00 (3.51e-04)
+KMCLibX.KMCLatticeModel   INFO     [ 32%] [  0.00%] 1,600 steps executed. time: 00:00:00 (5.04e-04) delta: 9.07986e-08
+KMCLibX.KMCLatticeModel   INFO     [ 34%] [  0.00%] 1,700 steps executed. time: 00:00:00 (6.44e-04) delta: 5.72076e-07
+KMCLibX.KMCLatticeModel   INFO     [ 36%] [  0.00%] 1,800 steps executed. time: 00:00:00 (7.81e-04) delta: 1.98176e-06
+KMCLibX.KMCLatticeModel   INFO     [ 36%] [  0.00%] 24 fast species are redistributed. time: 00:00:00 (7.81e-04)
+KMCLibX.KMCLatticeModel   INFO     [ 38%] [  0.00%] 1,900 steps executed. time: 00:00:00 (9.14e-04) delta: 6.99739e-07
+KMCLibX.KMCLatticeModel   INFO     [ 40%] [  0.00%] 2,000 steps executed. time: 00:00:00 (1.10e-03) delta: 9.08566e-07
+KMCLibX.KMCLatticeModel   INFO     [ 42%] [  0.00%] 2,100 steps executed. time: 00:00:00 (1.22e-03) delta: 1.85604e-07
+KMCLibX.KMCLatticeModel   INFO     [ 42%] [  0.00%] 48 fast species are redistributed. time: 00:00:00 (1.22e-03)
+KMCLibX.KMCLatticeModel   INFO     [ 44%] [  0.00%] 2,200 steps executed. time: 00:00:00 (1.41e-03) delta: 8.59003e-07
+KMCLibX.KMCLatticeModel   INFO     [ 46%] [  0.00%] 2,300 steps executed. time: 00:00:00 (1.58e-03) delta: 3.23828e-06
+KMCLibX.KMCLatticeModel   INFO     [ 48%] [  0.00%] 2,400 steps executed. time: 00:00:00 (1.81e-03) delta: 1.34590e-07
+KMCLibX.KMCLatticeModel   INFO     [ 48%] [  0.00%] 48 fast species are redistributed. time: 00:00:00 (1.81e-03)
+KMCLibX.KMCLatticeModel   INFO     [ 50%] [  0.00%] 2,500 steps executed. time: 00:00:00 (1.96e-03) delta: 5.29576e-06
+KMCLibX.KMCLatticeModel   INFO     [ 52%] [  0.00%] 2,600 steps executed. time: 00:00:00 (2.09e-03) delta: 1.36082e-06
+KMCLibX.KMCLatticeModel   INFO     [ 54%] [  0.00%] 2,700 steps executed. time: 00:00:00 (2.24e-03) delta: 5.51363e-07
+KMCLibX.KMCLatticeModel   INFO     [ 54%] [  0.00%] 24 fast species are redistributed. time: 00:00:00 (2.24e-03)
+KMCLibX.KMCLatticeModel   INFO     [ 56%] [  0.00%] 2,800 steps executed. time: 00:00:00 (2.37e-03) delta: 1.48636e-06
+KMCLibX.KMCLatticeModel   INFO     [ 57%] [  0.00%] 2,900 steps executed. time: 00:00:00 (2.54e-03) delta: 3.60664e-06
+KMCLibX.KMCLatticeModel   INFO     [ 60%] [  0.00%] 3,000 steps executed. time: 00:00:00 (2.68e-03) delta: 2.39296e-06
+KMCLibX.KMCLatticeModel   INFO     [ 60%] [  0.00%] 24 fast species are redistributed. time: 00:00:00 (2.68e-03)
+KMCLibX.KMCLatticeModel   INFO     [ 62%] [  0.00%] 3,100 steps executed. time: 00:00:00 (2.84e-03) delta: 2.40185e-07
+KMCLibX.KMCLatticeModel   INFO     [ 64%] [  0.00%] 3,200 steps executed. time: 00:00:00 (3.03e-03) delta: 6.63311e-07
+KMCLibX.KMCLatticeModel   INFO     [ 66%] [  0.00%] 3,300 steps executed. time: 00:00:00 (3.20e-03) delta: 3.18762e-07
+KMCLibX.KMCLatticeModel   INFO     [ 66%] [  0.00%] 12 fast species are redistributed. time: 00:00:00 (3.20e-03)
+KMCLibX.KMCLatticeModel   INFO     [ 68%] [  0.00%] 3,400 steps executed. time: 00:00:00 (3.36e-03) delta: 2.75154e-06
+KMCLibX.KMCLatticeModel   INFO     [ 70%] [  0.00%] 3,500 steps executed. time: 00:00:00 (3.50e-03) delta: 6.93831e-07
+KMCLibX.KMCLatticeModel   INFO     [ 72%] [  0.00%] 3,600 steps executed. time: 00:00:00 (3.64e-03) delta: 3.08596e-07
+KMCLibX.KMCLatticeModel   INFO     [ 72%] [  0.00%] 72 fast species are redistributed. time: 00:00:00 (3.64e-03)
+KMCLibX.KMCLatticeModel   INFO     [ 74%] [  0.00%] 3,700 steps executed. time: 00:00:00 (3.82e-03) delta: 1.58039e-06
+KMCLibX.KMCLatticeModel   INFO     [ 76%] [  0.00%] 3,800 steps executed. time: 00:00:00 (3.99e-03) delta: 2.07774e-07
+KMCLibX.KMCLatticeModel   INFO     [ 78%] [  0.00%] 3,900 steps executed. time: 00:00:00 (4.12e-03) delta: 4.40356e-07
+KMCLibX.KMCLatticeModel   INFO     [ 78%] [  0.00%] 60 fast species are redistributed. time: 00:00:00 (4.12e-03)
+KMCLibX.KMCLatticeModel   INFO     [ 80%] [  0.00%] 4,000 steps executed. time: 00:00:00 (4.26e-03) delta: 1.10800e-07
+KMCLibX.KMCLatticeModel   INFO     [ 82%] [  0.00%] 4,100 steps executed. time: 00:00:00 (4.43e-03) delta: 2.71673e-06
+KMCLibX.KMCLatticeModel   INFO     [ 84%] [  0.00%] 4,200 steps executed. time: 00:00:00 (4.56e-03) delta: 1.67997e-07
+KMCLibX.KMCLatticeModel   INFO     [ 84%] [  0.00%] 84 fast species are redistributed. time: 00:00:00 (4.56e-03)
+KMCLibX.KMCLatticeModel   INFO     [ 86%] [  0.00%] 4,300 steps executed. time: 00:00:00 (4.71e-03) delta: 7.28734e-07
+KMCLibX.KMCLatticeModel   INFO     [ 88%] [  0.00%] 4,400 steps executed. time: 00:00:00 (4.84e-03) delta: 2.63893e-07
+KMCLibX.KMCLatticeModel   INFO     [ 90%] [  0.01%] 4,500 steps executed. time: 00:00:00 (5.01e-03) delta: 2.57537e-06
+KMCLibX.KMCLatticeModel   INFO     [ 90%] [  0.01%] 36 fast species are redistributed. time: 00:00:00 (5.01e-03)
+KMCLibX.KMCLatticeModel   INFO     [ 92%] [  0.01%] 4,600 steps executed. time: 00:00:00 (5.14e-03) delta: 1.81512e-07
+KMCLibX.KMCLatticeModel   INFO     [ 94%] [  0.01%] 4,700 steps executed. time: 00:00:00 (5.31e-03) delta: 1.49162e-06
+KMCLibX.KMCLatticeModel   INFO     [ 96%] [  0.01%] 4,800 steps executed. time: 00:00:00 (5.47e-03) delta: 7.50716e-08
+KMCLibX.KMCLatticeModel   INFO     [ 96%] [  0.01%] 36 fast species are redistributed. time: 00:00:00 (5.47e-03)
+KMCLibX.KMCLatticeModel   INFO     [ 98%] [  0.01%] 4,900 steps executed. time: 00:00:00 (5.61e-03) delta: 1.65153e-06
+KMCLibX.KMCLatticeModel   INFO     [100%] [  0.01%] 5,000 steps executed. time: 00:00:00 (5.72e-03) delta: 1.01188e-07
+KMCLibX.KMCLatticeModel   INFO     Max kMC step reached, kMC iteration finish.
+model.solvers.KMCSolver.CoveragesAnalysis   INFO     coverages informations are written to auto_coverages.py
+model.solvers.KMCSolver.FrequencyAnalysis   INFO     frequency informations are written to auto_frequency.py
+model.KMCModelRun   INFO     Time used: 0 h 0 min 2.953908 sec
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     active_ratio = 0.333333333333
+model   INFO     empty_type = V
+model   INFO     random_generator = MT
+model   WARNING  Found redundant parameter 'seed'
+model   INFO     basis_sites = [[0.0, 0.0, 0.0], [0.0, 0.5, 0.0], [0.5, 0.0, 0.0], [0.5, 0.5, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0]]
+model   INFO     cell_vectors = [[1.0, 0.0, 0.0], [0.5, 0.87, 0.0], [0.0, 0.0, 1.0]]
+model   INFO     time_limit = 100.0
+model   INFO     nstep = 2000
+model   INFO     temperature = 500
+model   INFO     do_redistribution = True
+model   INFO     analysis_interval = [20, 1]
+model   INFO     redistribution_interval = 300
+model   INFO     trajectory_dump_interval = 40
+model   INFO     rate_algo = TST
+model   INFO     repetitions = (30, 30, 1)
+model   INFO     species_definitions =
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             CO_g: {'pressure': 1e-05}
+model   INFO             O2_g: {'pressure': 5.0}
+model   INFO             CO2_g: {'pressure': 1e-07}
+model   INFO     rxn_expressions =
+model   INFO             CO_g + *_f -> CO_f
+model   INFO             O2_g + 2*_f <-> O-O_2f -> 2O_f
+model   INFO             O_f + CO_f <-> O-CO_f + *_f -> CO2_g + *_f + *_f
+model   INFO             O_f + *_f -> O_f + *_f
+model   INFO             CO_f + *_f -> CO_f + *_f
+model   INFO     coverage_ratios = [1.0, 0.3333333333333333, 0.3333333333333333, 0.3333333333333333, 1.0, 1.0]
+model   INFO     distributor_type = ProcessRandomDistributor
+model   INFO     possible_element_types = ['V', 'O', 'C']
+model   INFO     analysis = ['CoveragesAnalysis', 'FrequencyAnalysis']
+model   INFO     periodic = (True, True, False)
+model   INFO     possible_site_types = ['P']
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     unitcell_area = 7.15e-20
+model   INFO     Parsing elementary rxns...
+model   INFO     KMCModel creating...success!
+
+model.parsers.KMCParser   INFO     Total 15 processes dicts read in.
+model.solver.SolverBase   INFO     CO_g + *_f -> CO_f (Gaf=0.3, Gar=1.04, dG=-0.74)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 9861205382.04 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 98612.0538204 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O2_g + 2*_f <-> O-O_2f -> 2O_f (Gaf=0.98, Gar=3.38, dG=-2.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1379.84716706 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 6899.23583531 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [1.0, 1.0, 0.0], [1.6666666666666667, 0.6666666666666666, 0.0], [2.0, 0.0, 0.0], [1.6666666666666667, -0.3333333333333333, 0.0], [1.0, 0.5, 0.0], [1.5, 0.5, 0.0], [1.5, 0.0, 0.0], [1.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O2_g + 2*_f <-> O-O_2f -> 2O_f (Gaf=0.98, Gar=3.38, dG=-2.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1379.84716706 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 6899.23583531 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [0.0, 2.0, 0.0], [0.6666666666666666, 1.6666666666666667, 0.0], [1.0, 1.0, 0.0], [0.0, 1.5, 0.0], [0.5, 1.5, 0.0], [0.5, 1.0, 0.0], [0.3333333333333333, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O2_g + 2*_f <-> O-O_2f -> 2O_f (Gaf=0.98, Gar=3.38, dG=-2.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1379.84716706 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 6899.23583531 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 8.88982632295e-22 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-1.0, 1.0, 0.0], [-1.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 2.0, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 1.5, 0.0], [-0.5, 1.5, 0.0], [-0.5, 1.0, 0.0], [-0.6666666666666666, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + CO_f <-> O-CO_f + *_f -> CO2_g + *_f + *_f (Gaf=0.82, Gar=2.22, dG=-1.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-10 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-17 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [1.0, 1.0, 0.0], [1.6666666666666667, 0.6666666666666666, 0.0], [2.0, 0.0, 0.0], [1.6666666666666667, -0.3333333333333333, 0.0], [1.0, 0.5, 0.0], [1.5, 0.5, 0.0], [1.5, 0.0, 0.0], [1.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + CO_f <-> O-CO_f + *_f -> CO2_g + *_f + *_f (Gaf=0.82, Gar=2.22, dG=-1.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-10 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-17 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [0.0, 2.0, 0.0], [0.6666666666666666, 1.6666666666666667, 0.0], [1.0, 1.0, 0.0], [0.0, 1.5, 0.0], [0.5, 1.5, 0.0], [0.5, 1.0, 0.0], [0.3333333333333333, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + CO_f <-> O-CO_f + *_f -> CO2_g + *_f + *_f (Gaf=0.82, Gar=2.22, dG=-1.4)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-10 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 56566.6118749 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 4.37703315373e-17 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-1.0, 1.0, 0.0], [-1.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 2.0, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 1.5, 0.0], [-0.5, 1.5, 0.0], [-0.5, 1.0, 0.0], [-0.6666666666666666, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_f + *_f -> CO_f + *_f (Gaf=0.19, Gar=0.19, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [1.0, 1.0, 0.0], [1.6666666666666667, 0.6666666666666666, 0.0], [2.0, 0.0, 0.0], [1.6666666666666667, -0.3333333333333333, 0.0], [1.0, 0.5, 0.0], [1.5, 0.5, 0.0], [1.5, 0.0, 0.0], [1.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_f + *_f -> CO_f + *_f (Gaf=0.19, Gar=0.19, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [0.0, 2.0, 0.0], [0.6666666666666666, 1.6666666666666667, 0.0], [1.0, 1.0, 0.0], [0.0, 1.5, 0.0], [0.5, 1.5, 0.0], [0.5, 1.0, 0.0], [0.3333333333333333, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_f + *_f -> CO_f + *_f (Gaf=0.19, Gar=0.19, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 1.26672200722e+11 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-1.0, 1.0, 0.0], [-1.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 2.0, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 1.5, 0.0], [-0.5, 1.5, 0.0], [-0.5, 1.0, 0.0], [-0.6666666666666666, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + *_f -> O_f + *_f (Gaf=1.41, Gar=1.41, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [1.0, 1.0, 0.0], [1.6666666666666667, 0.6666666666666666, 0.0], [2.0, 0.0, 0.0], [1.6666666666666667, -0.3333333333333333, 0.0], [1.0, 0.5, 0.0], [1.5, 0.5, 0.0], [1.5, 0.0, 0.0], [1.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + *_f -> O_f + *_f (Gaf=1.41, Gar=1.41, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [0.0, 2.0, 0.0], [0.6666666666666666, 1.6666666666666667, 0.0], [1.0, 1.0, 0.0], [0.0, 1.5, 0.0], [0.5, 1.5, 0.0], [0.5, 1.0, 0.0], [0.3333333333333333, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     O_f + *_f -> O_f + *_f (Gaf=1.41, Gar=1.41, dG=0.0)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 0.0639177256414 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0], [-1.0, 1.0, 0.0], [-1.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 2.0, 0.0], [-0.3333333333333333, 1.6666666666666667, 0.0], [-1.0, 1.5, 0.0], [-0.5, 1.5, 0.0], [-0.5, 1.0, 0.0], [-0.6666666666666666, 1.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     Reverse elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_g + *_f -> CO_f (Gaf=0.3, Gar=1.04, dG=-0.74)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 9861205382.04 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 98612.0538204 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'C']
+model.solvers.KMCSolver   INFO     
+
+model.solver.SolverBase   INFO     CO_g + *_f -> CO_f (Gaf=0.3, Gar=1.04, dG=-0.74)
+model.solver.SolverBase   INFO     Rates without partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 9861205382.04 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     Rates including partial pressure:
+model.solver.SolverBase   INFO     R(forward) = 98612.0538204 s^-1 (Transition State Theory)
+model.solver.SolverBase   INFO     R(reverse) = 342.813205898 s^-1 (Transition State Theory)
+model.solvers.KMCSolver   INFO     Coordinates = [[0.0, 0.0, 0.0], [-0.3333333333333333, 0.6666666666666666, 0.0], [0.0, 1.0, 0.0], [0.6666666666666666, 0.6666666666666666, 0.0], [1.0, 0.0, 0.0], [0.6666666666666666, -0.3333333333333333, 0.0], [0.0, 0.5, 0.0], [0.5, 0.5, 0.0], [0.5, 0.0, 0.0], [0.3333333333333333, 0.3333333333333333, 0.0]]
+model.solvers.KMCSolver   INFO     Basis site = 0
+model.solvers.KMCSolver   INFO     Forward elements changes:
+model.solvers.KMCSolver   INFO         /['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V']
+model.solvers.KMCSolver   INFO         \['V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'V', 'O']
+model.solvers.KMCSolver   INFO     
+
+model.solvers.KMCSolver   INFO     interactions script written to auto_kmc_model.py
+model.solvers.KMCSolver   INFO     script auto_kmc_model.py created.
+model.solvers.KMCSolver   INFO     
+model.solvers.KMCSolver   INFO     Entering KMCLibX main kMC loop...
+KMCLibX.KMCLatticeModel   INFO     
+KMCLibX.KMCLatticeModel   INFO     setting up the backend C++ object.
+KMCLibX.KMCLatticeModel   INFO     Runing for 2,000 steps, starting from time: 0.000000
+
+model.solvers.KMCSolver.FrequencyAnalysis   INFO     TOF analysis start at time = 3.055105e-09
+KMCLibX.KMCLatticeModel   INFO     [  2%] [  0.00%] 40 steps executed. time: 00:00:00 (3.96e-07) delta: 1.44497e-08
+KMCLibX.KMCLatticeModel   INFO     [  4%] [  0.00%] 80 steps executed. time: 00:00:00 (7.90e-07) delta: 1.84612e-08
+KMCLibX.KMCLatticeModel   INFO     [  6%] [  0.00%] 120 steps executed. time: 00:00:00 (1.30e-06) delta: 1.72405e-08
+KMCLibX.KMCLatticeModel   INFO     [  8%] [  0.00%] 160 steps executed. time: 00:00:00 (1.76e-06) delta: 1.74563e-09
+KMCLibX.KMCLatticeModel   INFO     [ 10%] [  0.00%] 200 steps executed. time: 00:00:00 (2.29e-06) delta: 1.61662e-08
+KMCLibX.KMCLatticeModel   INFO     [ 12%] [  0.00%] 240 steps executed. time: 00:00:00 (2.79e-06) delta: 1.09804e-08
+KMCLibX.KMCLatticeModel   INFO     [ 14%] [  0.00%] 280 steps executed. time: 00:00:00 (3.28e-06) delta: 6.48799e-08
+KMCLibX.KMCLatticeModel   INFO     [ 16%] [  0.00%] 320 steps executed. time: 00:00:00 (3.77e-06) delta: 1.29007e-08
+KMCLibX.KMCLatticeModel   INFO     [ 18%] [  0.00%] 360 steps executed. time: 00:00:00 (4.28e-06) delta: 1.95518e-09
+KMCLibX.KMCLatticeModel   INFO     [ 20%] [  0.00%] 400 steps executed. time: 00:00:00 (4.75e-06) delta: 1.10129e-09
+KMCLibX.KMCLatticeModel   INFO     [ 22%] [  0.00%] 440 steps executed. time: 00:00:00 (5.54e-06) delta: 1.74824e-08
+KMCLibX.KMCLatticeModel   INFO     [ 24%] [  0.00%] 480 steps executed. time: 00:00:00 (6.37e-06) delta: 4.31711e-08
+KMCLibX.KMCLatticeModel   INFO     [ 26%] [  0.00%] 520 steps executed. time: 00:00:00 (7.16e-06) delta: 6.97428e-09
+KMCLibX.KMCLatticeModel   INFO     [ 28%] [  0.00%] 560 steps executed. time: 00:00:00 (8.02e-06) delta: 2.25091e-08
+KMCLibX.KMCLatticeModel   INFO     [ 30%] [  0.00%] 600 steps executed. time: 00:00:00 (8.90e-06) delta: 3.45973e-08
+KMCLibX.KMCLatticeModel   INFO     [ 30%] [  0.00%] 1068 fast species are redistributed. time: 00:00:00 (8.90e-06)
+KMCLibX.KMCLatticeModel   INFO     [ 32%] [  0.00%] 640 steps executed. time: 00:00:00 (1.01e-05) delta: 7.89799e-10
+KMCLibX.KMCLatticeModel   INFO     [ 34%] [  0.00%] 680 steps executed. time: 00:00:00 (1.13e-05) delta: 9.82914e-09
+KMCLibX.KMCLatticeModel   INFO     [ 36%] [  0.00%] 720 steps executed. time: 00:00:00 (1.25e-05) delta: 2.53118e-08
+KMCLibX.KMCLatticeModel   INFO     [ 38%] [  0.00%] 760 steps executed. time: 00:00:00 (1.37e-05) delta: 6.13373e-08
+KMCLibX.KMCLatticeModel   INFO     [ 40%] [  0.00%] 800 steps executed. time: 00:00:00 (1.48e-05) delta: 2.93574e-09
+KMCLibX.KMCLatticeModel   INFO     [ 42%] [  0.00%] 840 steps executed. time: 00:00:00 (1.64e-05) delta: 6.66200e-08
+KMCLibX.KMCLatticeModel   INFO     [ 44%] [  0.00%] 880 steps executed. time: 00:00:00 (1.80e-05) delta: 7.91361e-08
+KMCLibX.KMCLatticeModel   INFO     [ 46%] [  0.00%] 920 steps executed. time: 00:00:00 (1.93e-05) delta: 9.58581e-08
+KMCLibX.KMCLatticeModel   INFO     [ 48%] [  0.00%] 960 steps executed. time: 00:00:00 (2.09e-05) delta: 1.98676e-09
+KMCLibX.KMCLatticeModel   INFO     [ 50%] [  0.00%] 1,000 steps executed. time: 00:00:00 (2.24e-05) delta: 6.61127e-08
+KMCLibX.KMCLatticeModel   INFO     [ 52%] [  0.00%] 1,040 steps executed. time: 00:00:00 (2.45e-05) delta: 9.26943e-08
+KMCLibX.KMCLatticeModel   INFO     [ 54%] [  0.00%] 1,080 steps executed. time: 00:00:00 (2.62e-05) delta: 3.64137e-08
+KMCLibX.KMCLatticeModel   INFO     [ 56%] [  0.00%] 1,120 steps executed. time: 00:00:00 (2.87e-05) delta: 4.03078e-08
+KMCLibX.KMCLatticeModel   INFO     [ 57%] [  0.00%] 1,160 steps executed. time: 00:00:00 (3.16e-05) delta: 8.42404e-08
+KMCLibX.KMCLatticeModel   INFO     [ 60%] [  0.00%] 1,200 steps executed. time: 00:00:00 (3.58e-05) delta: 1.94329e-07
+KMCLibX.KMCLatticeModel   INFO     [ 60%] [  0.00%] 580 fast species are redistributed. time: 00:00:00 (3.58e-05)
+KMCLibX.KMCLatticeModel   INFO     [ 62%] [  0.00%] 1,240 steps executed. time: 00:00:00 (4.04e-05) delta: 1.38149e-07
+KMCLibX.KMCLatticeModel   INFO     [ 64%] [  0.00%] 1,280 steps executed. time: 00:00:00 (4.97e-05) delta: 2.18404e-07
+KMCLibX.KMCLatticeModel   INFO     [ 66%] [  0.00%] 1,320 steps executed. time: 00:00:00 (6.90e-05) delta: 2.29297e-06
+KMCLibX.KMCLatticeModel   INFO     [ 68%] [  0.00%] 1,360 steps executed. time: 00:00:00 (1.39e-04) delta: 2.04304e-07
+KMCLibX.KMCLatticeModel   INFO     [ 70%] [  0.00%] 1,400 steps executed. time: 00:00:00 (2.00e-04) delta: 6.59918e-07
+KMCLibX.KMCLatticeModel   INFO     [ 72%] [  0.00%] 1,440 steps executed. time: 00:00:00 (2.57e-04) delta: 3.63835e-06
+KMCLibX.KMCLatticeModel   INFO     [ 74%] [  0.00%] 1,480 steps executed. time: 00:00:00 (3.17e-04) delta: 1.51842e-06
+KMCLibX.KMCLatticeModel   INFO     [ 76%] [  0.00%] 1,520 steps executed. time: 00:00:00 (3.90e-04) delta: 4.03339e-06
+KMCLibX.KMCLatticeModel   INFO     [ 78%] [  0.00%] 1,560 steps executed. time: 00:00:00 (4.44e-04) delta: 2.39809e-07
+KMCLibX.KMCLatticeModel   INFO     [ 80%] [  0.00%] 1,600 steps executed. time: 00:00:00 (5.04e-04) delta: 9.07986e-08
+KMCLibX.KMCLatticeModel   INFO     [ 82%] [  0.00%] 1,640 steps executed. time: 00:00:00 (5.63e-04) delta: 5.41600e-06
+KMCLibX.KMCLatticeModel   INFO     [ 84%] [  0.00%] 1,680 steps executed. time: 00:00:00 (6.24e-04) delta: 2.54499e-06
+KMCLibX.KMCLatticeModel   INFO     [ 86%] [  0.00%] 1,720 steps executed. time: 00:00:00 (6.69e-04) delta: 1.01948e-06
+KMCLibX.KMCLatticeModel   INFO     [ 88%] [  0.00%] 1,760 steps executed. time: 00:00:00 (7.18e-04) delta: 7.65444e-07
+KMCLibX.KMCLatticeModel   INFO     [ 90%] [  0.00%] 1,800 steps executed. time: 00:00:00 (7.81e-04) delta: 1.98176e-06
+KMCLibX.KMCLatticeModel   INFO     [ 90%] [  0.00%] 24 fast species are redistributed. time: 00:00:00 (7.81e-04)
+KMCLibX.KMCLatticeModel   INFO     [ 92%] [  0.00%] 1,840 steps executed. time: 00:00:00 (8.19e-04) delta: 6.52722e-07
+KMCLibX.KMCLatticeModel   INFO     [ 94%] [  0.00%] 1,880 steps executed. time: 00:00:00 (8.92e-04) delta: 9.99070e-07
+KMCLibX.KMCLatticeModel   INFO     [ 96%] [  0.00%] 1,920 steps executed. time: 00:00:00 (9.52e-04) delta: 6.76595e-07
+KMCLibX.KMCLatticeModel   INFO     [ 98%] [  0.00%] 1,960 steps executed. time: 00:00:00 (1.02e-03) delta: 2.53561e-06
+KMCLibX.KMCLatticeModel   INFO     [100%] [  0.00%] 2,000 steps executed. time: 00:00:00 (1.10e-03) delta: 9.08566e-07
+KMCLibX.KMCLatticeModel   INFO     Max kMC step reached, kMC iteration finish.
+model.solvers.KMCSolver.CoveragesAnalysis   INFO     coverages informations are written to auto_coverages.py
+model.solvers.KMCSolver.FrequencyAnalysis   INFO     frequency informations are written to auto_frequency.py
+model.KMCModelRun   INFO     Time used: 0 h 0 min 2.254897 sec

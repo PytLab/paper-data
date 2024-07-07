@@ -1,0 +1,2741 @@
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     species_definitions =
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     rate_algo = TST
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     species_definitions =
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     rate_algo = TST
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     species_definitions =
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rate_algo = TST
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     rate_algo = TST
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     temperature = 723.15
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     species_definitions =
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     temperature = 723.15
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     rate_algo = TST
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     temperature = 723.15
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     species_definitions =
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     temperature = 723.15
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     temperature = 723.15
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             O2_g: {'pressure': 0.2}
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     species_definitions =
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     species_definitions =
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     temperature = 723.15
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     temperature = 723.15
+model   INFO     species_definitions =
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     rate_algo = TST
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     species_definitions =
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     rate_algo = TST
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     species_definitions =
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rate_algo = TST
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     temperature = 723.15
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rate_algo = TST
+model   INFO     temperature = 723.15
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     species_definitions =
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO     temperature = 723.15
+model   INFO     rate_algo = TST
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     temperature = 723.15
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     temperature = 723.15
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     species_definitions =
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rate_algo = TST
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     temperature = 723.15
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO     rate_algo = TST
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     rate_algo = TST
+model   INFO     species_definitions =
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     species_definitions =
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     species_definitions =
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rate_algo = TST
+model   INFO     temperature = 723.15
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rate_algo = TST
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     rate_algo = TST
+model   INFO     rate_algo = TST
+model   INFO     species_definitions =
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO     rxn_expressions =
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     temperature = 723.15
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     Parsing elementary rxns...
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     rate_algo = TST
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     species_definitions =
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     species_definitions =
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     rate_algo = TST
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'empty_type'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     rate_algo = TST
+model   INFO     species_definitions =
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     rate_algo = TST
+model   INFO     species_definitions =
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'periodic'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'repetitions'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'repetitions'
+model   INFO     rate_algo = TST
+model   WARNING  Found redundant parameter 'possible_element_types'
+model   INFO     temperature = 723.15
+model   WARNING  Found redundant parameter 'cell_vectors'
+model   WARNING  Found redundant parameter 'periodic'
+model   WARNING  Found redundant parameter 'surface_name'
+model   WARNING  Found redundant parameter 'basis_sites'
+model   WARNING  Found redundant parameter 'empty_type'
+model   WARNING  Found redundant parameter 'possible_site_types'
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_c + *_o <-> CH3-H_c + *_o -> CH3_c + H_o
+model   INFO             CH3_c + *_o <-> CH3-_c + *_o -> CH3_o + *_c
+model   INFO             CH3_o + 2*_o <-> CH2-H_o + 2*_o -> CH2_2o + H_o
+model   INFO             O2_g + CH2_2o + *_c -> O2_c + CH2_2o
+model   INFO             CH2_2o + O2_c <-> OO-HCH_2o + *_c -> CHO_o + OH_c + *_o
+model   INFO             O2_g + CHO_o + *_c -> O2_c + CHO_o
+model   INFO             CHO_o + O_o + O2_c <-> COO-H_2o + O2_c -> CO2_g + OOH_c + 2*_o
+model   INFO             CHO_o + O_o + OH_c <-> CO-H_o + O_o + OH_c -> CO2_g + H2O_g + *_c + 2*_o
+model   INFO             CHO_o + O_o + *_o <-> COO-H_2o + *_o -> CO2_g + H_o + 2*_o
+model   INFO             O2_g + *_v + *_c <-> O-O_v + *_c -> O_v + O_c
+model   INFO             H_a + *_a <-> H-_a + *_a -> *_a + H_a
+model   INFO             H_b + *_b <-> H-_b + *_b -> *_b + H_b
+model   INFO             H_a + O_c <-> H-O_c + *_a -> OH_c + *_a
+model   INFO             H_b + O_c <-> H-O_c + *_b -> OH_c + *_b
+model   INFO             H_a + OH_c <-> H-OH_c + *_a -> H2O_g + *_c + *_a
+model   INFO             H_b + OH_c <-> H-OH_c + *_b -> H2O_g + *_c + *_b
+model   INFO     species_definitions =
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     temperature = 732.15
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_a + *_c <-> CH3-H_c + *_a -> CH3_c + H_a
+model   INFO             CH3_c + *_b <-> CH3-_c + *_b -> CH3_b + *_c
+model   INFO             O2_g + *_c + CH3_b -> O2_c + CH3_b
+model   INFO             O2_c + CH3_b <-> OO-H_c + CH2_b -> OOH_c + CH2_b
+model   INFO             OOH_c + H_a + CH2_b <-> OOH-H_c + *_a + CH2_b -> H2O_g + OCH2_b + *_a + *_c
+model   INFO             OCH2_b + *_c <-> OCH2-_b + *_c -> *_b + OCH2_c
+model   INFO             OCH2_c + *_a + *_b <-> OCH-H_c + *_a + *_b -> CHO_b + *_c + H_a
+model   INFO             O2_g + CHO_b + *_c -> O2_c + CHO_b
+model   INFO             O2_c + CHO_b + O_v <-> OO-H_c + CO_b + O_v -> OOH_c + CO2_g + *_b + *_v
+model   INFO             OOH_c + H_a + *_v -> H2O_g + *_c + *_a + O_v
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     species_definitions =
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO     rate_algo = TST
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     rate_algo = TST
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_a + *_c <-> CH3-H_c + *_a -> CH3_c + H_a
+model   INFO             CH3_c + *_b <-> CH3-_c + *_b -> CH3_b + *_c
+model   INFO             O2_g + *_c + CH3_b -> O2_c + CH3_b
+model   INFO             O2_c + CH3_b <-> OO-H_c + CH2_b -> OOH_c + CH2_b
+model   INFO             OOH_c + H_a + CH2_b <-> OOH-H_c + *_a + CH2_b -> H2O_g + OCH2_b + *_a + *_c
+model   INFO             OCH2_b + *_c <-> OCH2-_b + *_c -> *_b + OCH2_c
+model   INFO             OCH2_c + *_a + *_b <-> OCH-H_c + *_a + *_b -> CHO_b + *_c + H_a
+model   INFO             O2_g + CHO_b + *_c -> O2_c + CHO_b
+model   INFO             O2_c + CHO_b + O_v <-> OO-H_c + CO_b + O_v -> OOH_c + CO2_g + *_b + *_v
+model   INFO             OOH_c + H_a + *_v -> H2O_g + *_c + *_a + O_v
+model   INFO     temperature = 732.15
+model   INFO     species_definitions =
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     species_definitions =
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO     temperature = 732.15
+model   INFO     rate_algo = TST
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_a + *_c <-> CH3-H_c + *_a -> CH3_c + H_a
+model   INFO             CH3_c + *_b <-> CH3-_c + *_b -> CH3_b + *_c
+model   INFO             O2_g + *_c + CH3_b -> O2_c + CH3_b
+model   INFO             O2_c + CH3_b <-> OO-H_c + CH2_b -> OOH_c + CH2_b
+model   INFO             OOH_c + H_a + CH2_b <-> OOH-H_c + *_a + CH2_b -> H2O_g + OCH2_b + *_a + *_c
+model   INFO             OCH2_b + *_c <-> OCH2-_b + *_c -> *_b + OCH2_c
+model   INFO             OCH2_c + *_a + *_b <-> OCH-H_c + *_a + *_b -> CHO_b + *_c + H_a
+model   INFO             O2_g + CHO_b + *_c -> O2_c + CHO_b
+model   INFO             O2_c + CHO_b + O_v <-> OO-H_c + CO_b + O_v -> OOH_c + CO2_g + *_b + *_v
+model   INFO             OOH_c + H_a + *_v -> H2O_g + *_c + *_a + O_v
+model   INFO     corrector = ThermodynamicCorrector
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     rate_algo = TST
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             h: {'site_name': 'hcp', 'type': 'site'}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'site_name': 'fcc', 'type': 'site'}
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     temperature = 732.15
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_a + *_c <-> CH3-H_c + *_a -> CH3_c + H_a
+model   INFO             CH3_c + *_b <-> CH3-_c + *_b -> CH3_b + *_c
+model   INFO             O2_g + *_c + CH3_b -> O2_c + CH3_b
+model   INFO             O2_c + CH3_b <-> OO-H_c + CH2_b -> OOH_c + CH2_b
+model   INFO             OOH_c + H_a + CH2_b <-> OOH-H_c + *_a + CH2_b -> H2O_g + OCH2_b + *_a + *_c
+model   INFO             OCH2_b + *_c <-> OCH2-_b + *_c -> *_b + OCH2_c
+model   INFO             OCH2_c + *_a + *_b <-> OCH-H_c + *_a + *_b -> CHO_b + *_c + H_a
+model   INFO             O2_g + CHO_b + *_c -> O2_c + CHO_b
+model   INFO             O2_c + CHO_b + O_v <-> OO-H_c + CO_b + O_v -> OOH_c + CO2_g + *_b + *_v
+model   INFO             OOH_c + H_a + *_v -> H2O_g + *_c + *_a + O_v
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     species_definitions =
+model   INFO             H2O_g: {'pressure': 0.02}
+model   INFO             CH4_g: {'pressure': 0.01}
+model   INFO             f: {'type': 'site', 'site_name': 'fcc'}
+model   INFO             h: {'type': 'site', 'site_name': 'hcp'}
+model   INFO             O2_g: {'pressure': 0.2}
+model   INFO             CO2_g: {'pressure': 0.01}
+model   INFO     temperature = 732.15
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     rxn_expressions =
+model   INFO             CH4_g + *_a + *_c <-> CH3-H_c + *_a -> CH3_c + H_a
+model   INFO             CH3_c + *_b <-> CH3-_c + *_b -> CH3_b + *_c
+model   INFO             O2_g + *_c + CH3_b -> O2_c + CH3_b
+model   INFO             O2_c + CH3_b <-> OO-H_c + CH2_b -> OOH_c + CH2_b
+model   INFO             OOH_c + H_a + CH2_b <-> OOH-H_c + *_a + CH2_b -> H2O_g + OCH2_b + *_a + *_c
+model   INFO             OCH2_b + *_c <-> OCH2-_b + *_c -> *_b + OCH2_c
+model   INFO             OCH2_c + *_a + *_b <-> OCH-H_c + *_a + *_b -> CHO_b + *_c + H_a
+model   INFO             O2_g + CHO_b + *_c -> O2_c + CHO_b
+model   INFO             O2_c + CHO_b + O_v <-> OO-H_c + CO_b + O_v -> OOH_c + CO2_g + *_b + *_v
+model   INFO             OOH_c + H_a + *_v -> H2O_g + *_c + *_a + O_v
+model   WARNING  Found redundant parameter 'surface_name'
+model   INFO     rate_algo = TST
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+

@@ -1,0 +1,597 @@
+model   INFO     ------------------------------------
+model   INFO      Model is runing in MPI Environment 
+model   INFO      Number of process: 1
+model   INFO     ------------------------------------
+model   INFO      
+model   INFO     Loading Kinetic Model...
+
+model   INFO     read in parameters...
+model   INFO     unitcell_area = 9e-20
+model   INFO     tolerance = 1e-50
+model   INFO     rxn_expressions =
+model   INFO             CO_g + *_s <-> C-O_s -> CO_s
+model   INFO             O2_g + 2*_s <-> O-O_2s -> 2O_s
+model   INFO             CO_s + O_s <-> CO-O_2s -> CO2_g + 2*_s
+model   INFO     temperature = 500
+model   INFO     corrector = ThermodynamicCorrector
+model   INFO     plotter = EnergyProfilePlotter
+model   INFO     max_rootfinding_iterations = 100
+model   INFO     rate_algo = TST
+model   INFO     species_definitions =
+model   INFO             CO_g: {'pressure': 1e-05}
+model   INFO             CO2_g: {'pressure': 0.0}
+model   INFO             O2_g: {'pressure': 5}
+model   INFO             *_s: {'type': 'site', 'total': 1.0, 'site_name': 'top'}
+model   INFO     rootfinding = MDNewton
+model   INFO     active_ratio = 0.4444444444444444
+model   INFO     Parsing elementary rxns...
+model   INFO     MicroKineticModel creating...success!
+
+model.solvers.SteadyStateSolver   INFO     entering lsoda ODE integration loop...
+model.solvers.SteadyStateSolver   INFO     start = 0.00  end = 0.00  step = 0.000000
+
+model.solvers.SteadyStateSolver   INFO        process             time(s)                CO_s                 O_s
+model.solvers.SteadyStateSolver   INFO     ----------------------------------------------------------------------
+model.solvers.SteadyStateSolver   INFO           0.20%            0.000001      9.32569569e-02      1.23410052e-02
+model.solvers.SteadyStateSolver   INFO           0.40%            0.000002      1.76585345e-01      2.21097315e-02
+model.solvers.SteadyStateSolver   INFO           0.60%            0.000003      2.51076737e-01      2.97552184e-02
+model.solvers.SteadyStateSolver   INFO           0.80%            0.000004      3.17716253e-01      3.56509117e-02
+model.solvers.SteadyStateSolver   INFO           1.00%            0.000005      3.77387027e-01      4.01069050e-02
+model.solvers.SteadyStateSolver   INFO           1.20%            0.000006      4.30876809e-01      4.33804323e-02
+model.solvers.SteadyStateSolver   INFO           1.40%            0.000007      4.78885603e-01      4.56847691e-02
+model.solvers.SteadyStateSolver   INFO           1.60%            0.000008      5.22033812e-01      4.71966803e-02
+model.solvers.SteadyStateSolver   INFO           1.80%            0.000009      5.60870084e-01      4.80626846e-02
+model.solvers.SteadyStateSolver   INFO           2.00%            0.000010      5.95878968e-01      4.84042397e-02
+model.solvers.SteadyStateSolver   INFO           2.20%            0.000011      6.27488024e-01      4.83220405e-02
+model.solvers.SteadyStateSolver   INFO           2.40%            0.000012      6.56074322e-01      4.78995788e-02
+model.solvers.SteadyStateSolver   INFO           2.60%            0.000013      6.81970335e-01      4.72060837e-02
+model.solvers.SteadyStateSolver   INFO           2.80%            0.000014      7.05469231e-01      4.62989569e-02
+model.solvers.SteadyStateSolver   INFO           3.00%            0.000015      7.26829595e-01      4.52257725e-02
+model.solvers.SteadyStateSolver   INFO           3.20%            0.000016      7.46279600e-01      4.40259355e-02
+model.solvers.SteadyStateSolver   INFO           3.40%            0.000017      7.64020702e-01      4.27320474e-02
+model.solvers.SteadyStateSolver   INFO           3.60%            0.000018      7.80230908e-01      4.13710652e-02
+model.solvers.SteadyStateSolver   INFO           3.80%            0.000019      7.95067616e-01      3.99652133e-02
+model.solvers.SteadyStateSolver   INFO           4.00%            0.000020      8.08670132e-01      3.85327798e-02
+model.solvers.SteadyStateSolver   INFO           4.20%            0.000021      8.21161868e-01      3.70887553e-02
+model.solvers.SteadyStateSolver   INFO           4.40%            0.000022      8.32652278e-01      3.56453790e-02
+model.solvers.SteadyStateSolver   INFO           4.60%            0.000023      8.43238540e-01      3.42125887e-02
+model.solvers.SteadyStateSolver   INFO           4.80%            0.000024      8.53007029e-01      3.27983953e-02
+model.solvers.SteadyStateSolver   INFO           5.00%            0.000025      8.62034619e-01      3.14091974e-02
+model.solvers.SteadyStateSolver   INFO           5.20%            0.000026      8.70389811e-01      3.00500436e-02
+model.solvers.SteadyStateSolver   INFO           5.40%            0.000027      8.78133722e-01      2.87248521e-02
+model.solvers.SteadyStateSolver   INFO           5.60%            0.000028      8.85320963e-01      2.74365996e-02
+model.solvers.SteadyStateSolver   INFO           5.80%            0.000029      8.92000402e-01      2.61874801e-02
+model.solvers.SteadyStateSolver   INFO           6.00%            0.000030      8.98215815e-01      2.49790216e-02
+model.solvers.SteadyStateSolver   INFO           6.20%            0.000031      9.04006484e-01      2.38122075e-02
+model.solvers.SteadyStateSolver   INFO           6.40%            0.000032      9.09407718e-01      2.26875740e-02
+model.solvers.SteadyStateSolver   INFO           6.60%            0.000033      9.14451279e-01      2.16052696e-02
+model.solvers.SteadyStateSolver   INFO           6.80%            0.000034      9.19165825e-01      2.05651502e-02
+model.solvers.SteadyStateSolver   INFO           7.00%            0.000035      9.23577226e-01      1.95668106e-02
+model.solvers.SteadyStateSolver   INFO           7.20%            0.000036      9.27708887e-01      1.86096465e-02
+model.solvers.SteadyStateSolver   INFO           7.40%            0.000037      9.31581995e-01      1.76928871e-02
+model.solvers.SteadyStateSolver   INFO           7.60%            0.000038      9.35215783e-01      1.68156315e-02
+model.solvers.SteadyStateSolver   INFO           7.80%            0.000039      9.38627736e-01      1.59768778e-02
+model.solvers.SteadyStateSolver   INFO           8.00%            0.000040      9.41833772e-01      1.51755465e-02
+model.solvers.SteadyStateSolver   INFO           8.20%            0.000041      9.44848411e-01      1.44105006e-02
+model.solvers.SteadyStateSolver   INFO           8.40%            0.000042      9.47684918e-01      1.36805634e-02
+model.solvers.SteadyStateSolver   INFO           8.60%            0.000043      9.50355432e-01      1.29845325e-02
+model.solvers.SteadyStateSolver   INFO           8.80%            0.000044      9.52871072e-01      1.23211913e-02
+model.solvers.SteadyStateSolver   INFO           9.00%            0.000045      9.55242060e-01      1.16893205e-02
+model.solvers.SteadyStateSolver   INFO           9.20%            0.000046      9.57477799e-01      1.10877055e-02
+model.solvers.SteadyStateSolver   INFO           9.40%            0.000047      9.59586942e-01      1.05151428e-02
+model.solvers.SteadyStateSolver   INFO           9.60%            0.000048      9.61577485e-01      9.97044610e-03
+model.solvers.SteadyStateSolver   INFO           9.80%            0.000049      9.63456811e-01      9.45245080e-03
+model.solvers.SteadyStateSolver   INFO          10.00%            0.000050      9.65231749e-01      8.96001773e-03
+model.solvers.SteadyStateSolver   INFO          10.20%            0.000051      9.66908632e-01      8.49203523e-03
+model.solvers.SteadyStateSolver   INFO          10.40%            0.000052      9.68493339e-01      8.04742291e-03
+model.solvers.SteadyStateSolver   INFO          10.60%            0.000053      9.69991339e-01      7.62513228e-03
+model.solvers.SteadyStateSolver   INFO          10.80%            0.000054      9.71407724e-01      7.22414794e-03
+model.solvers.SteadyStateSolver   INFO          11.00%            0.000055      9.72747231e-01      6.84348846e-03
+model.solvers.SteadyStateSolver   INFO          11.20%            0.000056      9.74014286e-01      6.48220706e-03
+model.solvers.SteadyStateSolver   INFO          11.40%            0.000057      9.75213021e-01      6.13939130e-03
+model.solvers.SteadyStateSolver   INFO          11.60%            0.000058      9.76347303e-01      5.81416358e-03
+model.solvers.SteadyStateSolver   INFO          11.80%            0.000059      9.77420750e-01      5.50568053e-03
+model.solvers.SteadyStateSolver   INFO          12.00%            0.000060      9.78436757e-01      5.21313254e-03
+model.solvers.SteadyStateSolver   INFO          12.20%            0.000061      9.79398509e-01      4.93574359e-03
+model.solvers.SteadyStateSolver   INFO          12.40%            0.000062      9.80308993e-01      4.67276999e-03
+model.solvers.SteadyStateSolver   INFO          12.60%            0.000063      9.81171016e-01      4.42350005e-03
+model.solvers.SteadyStateSolver   INFO          12.80%            0.000064      9.81987218e-01      4.18725310e-03
+model.solvers.SteadyStateSolver   INFO          13.00%            0.000065      9.82760085e-01      3.96337864e-03
+model.solvers.SteadyStateSolver   INFO          13.20%            0.000066      9.83491961e-01      3.75125556e-03
+model.solvers.SteadyStateSolver   INFO          13.40%            0.000067      9.84185051e-01      3.55029090e-03
+model.solvers.SteadyStateSolver   INFO          13.60%            0.000068      9.84841434e-01      3.35991900e-03
+model.solvers.SteadyStateSolver   INFO          13.80%            0.000069      9.85463074e-01      3.17960073e-03
+model.solvers.SteadyStateSolver   INFO          14.00%            0.000070      9.86051823e-01      3.00882229e-03
+model.solvers.SteadyStateSolver   INFO          14.20%            0.000071      9.86609432e-01      2.84709427e-03
+model.solvers.SteadyStateSolver   INFO          14.40%            0.000072      9.87137553e-01      2.69395077e-03
+model.solvers.SteadyStateSolver   INFO          14.60%            0.000073      9.87637748e-01      2.54894843e-03
+model.solvers.SteadyStateSolver   INFO          14.80%            0.000074      9.88111495e-01      2.41166546e-03
+model.solvers.SteadyStateSolver   INFO          15.00%            0.000075      9.88560191e-01      2.28170075e-03
+model.solvers.SteadyStateSolver   INFO          15.20%            0.000076      9.88985157e-01      2.15867302e-03
+model.solvers.SteadyStateSolver   INFO          15.40%            0.000077      9.89387645e-01      2.04221990e-03
+model.solvers.SteadyStateSolver   INFO          15.60%            0.000078      9.89768837e-01      1.93199714e-03
+model.solvers.SteadyStateSolver   INFO          15.80%            0.000079      9.90129855e-01      1.82767774e-03
+model.solvers.SteadyStateSolver   INFO          16.00%            0.000080      9.90471760e-01      1.72895117e-03
+model.solvers.SteadyStateSolver   INFO          16.20%            0.000081      9.90795556e-01      1.63552281e-03
+model.solvers.SteadyStateSolver   INFO          16.40%            0.000082      9.91102195e-01      1.54711283e-03
+model.solvers.SteadyStateSolver   INFO          16.60%            0.000083      9.91392582e-01      1.46345557e-03
+model.solvers.SteadyStateSolver   INFO          16.80%            0.000084      9.91667568e-01      1.38429937e-03
+model.solvers.SteadyStateSolver   INFO          17.00%            0.000085      9.91927962e-01      1.30940540e-03
+model.solvers.SteadyStateSolver   INFO          17.20%            0.000086      9.92174535e-01      1.23854685e-03
+model.solvers.SteadyStateSolver   INFO          17.40%            0.000087      9.92408011e-01      1.17150896e-03
+model.solvers.SteadyStateSolver   INFO          17.60%            0.000088      9.92629080e-01      1.10808828e-03
+model.solvers.SteadyStateSolver   INFO          17.80%            0.000089      9.92838393e-01      1.04809159e-03
+model.solvers.SteadyStateSolver   INFO          18.00%            0.000090      9.93036572e-01      9.91335769e-04
+model.solvers.SteadyStateSolver   INFO          18.20%            0.000091      9.93224200e-01      9.37647743e-04
+model.solvers.SteadyStateSolver   INFO          18.40%            0.000092      9.93401834e-01      8.86863119e-04
+model.solvers.SteadyStateSolver   INFO          18.60%            0.000093      9.93570002e-01      8.38826026e-04
+model.solvers.SteadyStateSolver   INFO          18.80%            0.000094      9.93729203e-01      7.93389248e-04
+model.solvers.SteadyStateSolver   INFO          19.00%            0.000095      9.93879909e-01      7.50413155e-04
+model.solvers.SteadyStateSolver   INFO          19.20%            0.000096      9.94022570e-01      7.09765235e-04
+model.solvers.SteadyStateSolver   INFO          19.40%            0.000097      9.94157611e-01      6.71320329e-04
+model.solvers.SteadyStateSolver   INFO          19.60%            0.000098      9.94285435e-01      6.34959907e-04
+model.solvers.SteadyStateSolver   INFO          19.80%            0.000099      9.94406423e-01      6.00571576e-04
+model.solvers.SteadyStateSolver   INFO          20.00%            0.000100      9.94520938e-01      5.68048892e-04
+model.solvers.SteadyStateSolver   INFO          20.20%            0.000101      9.94629323e-01      5.37291141e-04
+model.solvers.SteadyStateSolver   INFO          20.40%            0.000102      9.94731903e-01      5.08203060e-04
+model.solvers.SteadyStateSolver   INFO          20.60%            0.000103      9.94828986e-01      4.80694649e-04
+model.solvers.SteadyStateSolver   INFO          20.80%            0.000104      9.94920861e-01      4.54680829e-04
+model.solvers.SteadyStateSolver   INFO          21.00%            0.000105      9.95007807e-01      4.30080598e-04
+model.solvers.SteadyStateSolver   INFO          21.20%            0.000106      9.95090085e-01      4.06817307e-04
+model.solvers.SteadyStateSolver   INFO          21.40%            0.000107      9.95167947e-01      3.84818382e-04
+model.solvers.SteadyStateSolver   INFO          21.60%            0.000108      9.95241625e-01      3.64015441e-04
+model.solvers.SteadyStateSolver   INFO          21.80%            0.000109      9.95311343e-01      3.44343780e-04
+model.solvers.SteadyStateSolver   INFO          22.00%            0.000110      9.95377312e-01      3.25742201e-04
+model.solvers.SteadyStateSolver   INFO          22.20%            0.000111      9.95439731e-01      3.08152605e-04
+model.solvers.SteadyStateSolver   INFO          22.40%            0.000112      9.95498790e-01      2.91520091e-04
+model.solvers.SteadyStateSolver   INFO          22.60%            0.000113      9.95554669e-01      2.75792715e-04
+model.solvers.SteadyStateSolver   INFO          22.80%            0.000114      9.95607537e-01      2.60921359e-04
+model.solvers.SteadyStateSolver   INFO          23.00%            0.000115      9.95657556e-01      2.46859536e-04
+model.solvers.SteadyStateSolver   INFO          23.20%            0.000116      9.95704879e-01      2.33563274e-04
+model.solvers.SteadyStateSolver   INFO          23.40%            0.000117      9.95749649e-01      2.20990990e-04
+model.solvers.SteadyStateSolver   INFO          23.60%            0.000118      9.95792003e-01      2.09103373e-04
+model.solvers.SteadyStateSolver   INFO          23.80%            0.000119      9.95832071e-01      1.97863227e-04
+model.solvers.SteadyStateSolver   INFO          24.00%            0.000120      9.95869975e-01      1.87235339e-04
+model.solvers.SteadyStateSolver   INFO          24.20%            0.000121      9.95905832e-01      1.77186412e-04
+model.solvers.SteadyStateSolver   INFO          24.40%            0.000122      9.95939751e-01      1.67684954e-04
+model.solvers.SteadyStateSolver   INFO          24.60%            0.000123      9.95971837e-01      1.58701190e-04
+model.solvers.SteadyStateSolver   INFO          24.80%            0.000124      9.96002187e-01      1.50206962e-04
+model.solvers.SteadyStateSolver   INFO          25.00%            0.000125      9.96030897e-01      1.42175626e-04
+model.solvers.SteadyStateSolver   INFO          25.20%            0.000126      9.96058053e-01      1.34581979e-04
+model.solvers.SteadyStateSolver   INFO          25.40%            0.000127      9.96083739e-01      1.27402208e-04
+model.solvers.SteadyStateSolver   INFO          25.60%            0.000128      9.96108035e-01      1.20613814e-04
+model.solvers.SteadyStateSolver   INFO          25.80%            0.000129      9.96131015e-01      1.14195481e-04
+model.solvers.SteadyStateSolver   INFO          26.00%            0.000130      9.96152750e-01      1.08127037e-04
+model.solvers.SteadyStateSolver   INFO          26.20%            0.000131      9.96173307e-01      1.02389431e-04
+model.solvers.SteadyStateSolver   INFO          26.40%            0.000132      9.96192750e-01      9.69646541e-05
+model.solvers.SteadyStateSolver   INFO          26.60%            0.000133      9.96211140e-01      9.18356597e-05
+model.solvers.SteadyStateSolver   INFO          26.80%            0.000134      9.96228532e-01      8.69863232e-05
+model.solvers.SteadyStateSolver   INFO          27.00%            0.000135      9.96244981e-01      8.24014124e-05
+model.solvers.SteadyStateSolver   INFO          27.20%            0.000136      9.96260538e-01      7.80665352e-05
+model.solvers.SteadyStateSolver   INFO          27.40%            0.000137      9.96275251e-01      7.39680600e-05
+model.solvers.SteadyStateSolver   INFO          27.60%            0.000138      9.96289166e-01      7.00930933e-05
+model.solvers.SteadyStateSolver   INFO          27.80%            0.000139      9.96302325e-01      6.64294582e-05
+model.solvers.SteadyStateSolver   INFO          28.00%            0.000140      9.96314769e-01      6.29656490e-05
+model.solvers.SteadyStateSolver   INFO          28.20%            0.000141      9.96326538e-01      5.96907678e-05
+model.solvers.SteadyStateSolver   INFO          28.40%            0.000142      9.96337668e-01      5.65945074e-05
+model.solvers.SteadyStateSolver   INFO          28.60%            0.000143      9.96348193e-01      5.36671320e-05
+model.solvers.SteadyStateSolver   INFO          28.80%            0.000144      9.96358146e-01      5.08994418e-05
+model.solvers.SteadyStateSolver   INFO          29.00%            0.000145      9.96367559e-01      4.82827256e-05
+model.solvers.SteadyStateSolver   INFO          29.20%            0.000146      9.96376460e-01      4.58087460e-05
+model.solvers.SteadyStateSolver   INFO          29.40%            0.000147      9.96384877e-01      4.34697230e-05
+model.solvers.SteadyStateSolver   INFO          29.60%            0.000148      9.96392837e-01      4.12583063e-05
+model.solvers.SteadyStateSolver   INFO          29.80%            0.000149      9.96400364e-01      3.91675326e-05
+model.solvers.SteadyStateSolver   INFO          30.00%            0.000150      9.96407481e-01      3.71908175e-05
+model.solvers.SteadyStateSolver   INFO          30.20%            0.000151      9.96414212e-01      3.53219426e-05
+model.solvers.SteadyStateSolver   INFO          30.40%            0.000152      9.96420576e-01      3.35550324e-05
+model.solvers.SteadyStateSolver   INFO          30.60%            0.000153      9.96426594e-01      3.18845218e-05
+model.solvers.SteadyStateSolver   INFO          30.80%            0.000154      9.96432285e-01      3.03051493e-05
+model.solvers.SteadyStateSolver   INFO          31.00%            0.000155      9.96437666e-01      2.88119455e-05
+model.solvers.SteadyStateSolver   INFO          31.20%            0.000156      9.96442754e-01      2.74002149e-05
+model.solvers.SteadyStateSolver   INFO          31.40%            0.000157      9.96447565e-01      2.60655102e-05
+model.solvers.SteadyStateSolver   INFO          31.60%            0.000158      9.96452115e-01      2.48036269e-05
+model.solvers.SteadyStateSolver   INFO          31.80%            0.000159      9.96456417e-01      2.36105941e-05
+model.solvers.SteadyStateSolver   INFO          32.00%            0.000160      9.96460484e-01      2.24826604e-05
+model.solvers.SteadyStateSolver   INFO          32.20%            0.000161      9.96464330e-01      2.14162714e-05
+model.solvers.SteadyStateSolver   INFO          32.40%            0.000162      9.96467967e-01      2.04080674e-05
+model.solvers.SteadyStateSolver   INFO          32.60%            0.000163      9.96471406e-01      1.94548752e-05
+model.solvers.SteadyStateSolver   INFO          32.80%            0.000164      9.96474657e-01      1.85536966e-05
+model.solvers.SteadyStateSolver   INFO          33.00%            0.000165      9.96477731e-01      1.77016915e-05
+model.solvers.SteadyStateSolver   INFO          33.20%            0.000166      9.96480638e-01      1.68961756e-05
+model.solvers.SteadyStateSolver   INFO          33.40%            0.000167      9.96483387e-01      1.61346133e-05
+model.solvers.SteadyStateSolver   INFO          33.60%            0.000168      9.96485985e-01      1.54146094e-05
+model.solvers.SteadyStateSolver   INFO          33.80%            0.000169      9.96488443e-01      1.47338944e-05
+model.solvers.SteadyStateSolver   INFO          34.00%            0.000170      9.96490766e-01      1.40903232e-05
+model.solvers.SteadyStateSolver   INFO          34.20%            0.000171      9.96492963e-01      1.34818701e-05
+model.solvers.SteadyStateSolver   INFO          34.40%            0.000172      9.96495040e-01      1.29066210e-05
+model.solvers.SteadyStateSolver   INFO          34.60%            0.000173      9.96497004e-01      1.23627626e-05
+model.solvers.SteadyStateSolver   INFO          34.80%            0.000174      9.96498861e-01      1.18485810e-05
+model.solvers.SteadyStateSolver   INFO          35.00%            0.000175      9.96500616e-01      1.13624576e-05
+model.solvers.SteadyStateSolver   INFO          35.20%            0.000176      9.96502276e-01      1.09028630e-05
+model.solvers.SteadyStateSolver   INFO          35.40%            0.000177      9.96503846e-01      1.04683483e-05
+model.solvers.SteadyStateSolver   INFO          35.60%            0.000178      9.96505329e-01      1.00575442e-05
+model.solvers.SteadyStateSolver   INFO          35.80%            0.000179      9.96506732e-01      9.66915764e-06
+model.solvers.SteadyStateSolver   INFO          36.00%            0.000180      9.96508059e-01      9.30196661e-06
+model.solvers.SteadyStateSolver   INFO          36.20%            0.000181      9.96509313e-01      8.95481336e-06
+model.solvers.SteadyStateSolver   INFO          36.40%            0.000182      9.96510499e-01      8.62660393e-06
+model.solvers.SteadyStateSolver   INFO          36.60%            0.000183      9.96511620e-01      8.31630503e-06
+model.solvers.SteadyStateSolver   INFO          36.80%            0.000184      9.96512680e-01      8.02294033e-06
+model.solvers.SteadyStateSolver   INFO          37.00%            0.000185      9.96513683e-01      7.74558479e-06
+model.solvers.SteadyStateSolver   INFO          37.20%            0.000186      9.96514630e-01      7.48336441e-06
+model.solvers.SteadyStateSolver   INFO          37.40%            0.000187      9.96515526e-01      7.23545367e-06
+model.solvers.SteadyStateSolver   INFO          37.60%            0.000188      9.96516373e-01      7.00107256e-06
+model.solvers.SteadyStateSolver   INFO          37.80%            0.000189      9.96517174e-01      6.77948195e-06
+model.solvers.SteadyStateSolver   INFO          38.00%            0.000190      9.96517931e-01      6.56998357e-06
+model.solvers.SteadyStateSolver   INFO          38.20%            0.000191      9.96518647e-01      6.37191785e-06
+model.solvers.SteadyStateSolver   INFO          38.40%            0.000192      9.96519324e-01      6.18466158e-06
+model.solvers.SteadyStateSolver   INFO          38.60%            0.000193      9.96519964e-01      6.00762421e-06
+model.solvers.SteadyStateSolver   INFO          38.80%            0.000194      9.96520569e-01      5.84024786e-06
+model.solvers.SteadyStateSolver   INFO          39.00%            0.000195      9.96521141e-01      5.68200556e-06
+model.solvers.SteadyStateSolver   INFO          39.20%            0.000196      9.96521682e-01      5.53239936e-06
+model.solvers.SteadyStateSolver   INFO          39.40%            0.000197      9.96522194e-01      5.39095745e-06
+model.solvers.SteadyStateSolver   INFO          39.60%            0.000198      9.96522677e-01      5.25723412e-06
+model.solvers.SteadyStateSolver   INFO          39.80%            0.000199      9.96523134e-01      5.13080839e-06
+model.solvers.SteadyStateSolver   INFO          40.00%            0.000200      9.96523566e-01      5.01128245e-06
+model.solvers.SteadyStateSolver   INFO          40.20%            0.000201      9.96523975e-01      4.89827931e-06
+model.solvers.SteadyStateSolver   INFO          40.40%            0.000202      9.96524361e-01      4.79144287e-06
+model.solvers.SteadyStateSolver   INFO          40.60%            0.000203      9.96524727e-01      4.69043679e-06
+model.solvers.SteadyStateSolver   INFO          40.80%            0.000204      9.96525072e-01      4.59494319e-06
+model.solvers.SteadyStateSolver   INFO          41.00%            0.000205      9.96525398e-01      4.50466089e-06
+model.solvers.SteadyStateSolver   INFO          41.20%            0.000206      9.96525707e-01      4.41930539e-06
+model.solvers.SteadyStateSolver   INFO          41.40%            0.000207      9.96525999e-01      4.33860799e-06
+model.solvers.SteadyStateSolver   INFO          41.60%            0.000208      9.96526275e-01      4.26231472e-06
+model.solvers.SteadyStateSolver   INFO          41.80%            0.000209      9.96526536e-01      4.19018495e-06
+model.solvers.SteadyStateSolver   INFO          42.00%            0.000210      9.96526782e-01      4.12199140e-06
+model.solvers.SteadyStateSolver   INFO          42.20%            0.000211      9.96527015e-01      4.05751938e-06
+model.solvers.SteadyStateSolver   INFO          42.40%            0.000212      9.96527236e-01      3.99656602e-06
+model.solvers.SteadyStateSolver   INFO          42.60%            0.000213      9.96527444e-01      3.93893904e-06
+model.solvers.SteadyStateSolver   INFO          42.80%            0.000214      9.96527641e-01      3.88445686e-06
+model.solvers.SteadyStateSolver   INFO          43.00%            0.000215      9.96527828e-01      3.83294794e-06
+model.solvers.SteadyStateSolver   INFO          43.20%            0.000216      9.96528004e-01      3.78425018e-06
+model.solvers.SteadyStateSolver   INFO          43.40%            0.000217      9.96528170e-01      3.73820997e-06
+model.solvers.SteadyStateSolver   INFO          43.60%            0.000218      9.96528328e-01      3.69468224e-06
+model.solvers.SteadyStateSolver   INFO          43.80%            0.000219      9.96528476e-01      3.65352996e-06
+model.solvers.SteadyStateSolver   INFO          44.00%            0.000220      9.96528617e-01      3.61462362e-06
+model.solvers.SteadyStateSolver   INFO          44.20%            0.000221      9.96528750e-01      3.57784050e-06
+model.solvers.SteadyStateSolver   INFO          44.40%            0.000222      9.96528876e-01      3.54306470e-06
+model.solvers.SteadyStateSolver   INFO          44.60%            0.000223      9.96528995e-01      3.51018674e-06
+model.solvers.SteadyStateSolver   INFO          44.80%            0.000224      9.96529107e-01      3.47910315e-06
+model.solvers.SteadyStateSolver   INFO          45.00%            0.000225      9.96529214e-01      3.44971582e-06
+model.solvers.SteadyStateSolver   INFO          45.20%            0.000226      9.96529314e-01      3.42193217e-06
+model.solvers.SteadyStateSolver   INFO          45.40%            0.000227      9.96529409e-01      3.39566475e-06
+model.solvers.SteadyStateSolver   INFO          45.60%            0.000228      9.96529499e-01      3.37083098e-06
+model.solvers.SteadyStateSolver   INFO          45.80%            0.000229      9.96529584e-01      3.34735251e-06
+model.solvers.SteadyStateSolver   INFO          46.00%            0.000230      9.96529664e-01      3.32515529e-06
+model.solvers.SteadyStateSolver   INFO          46.20%            0.000231      9.96529740e-01      3.30416942e-06
+model.solvers.SteadyStateSolver   INFO          46.40%            0.000232      9.96529812e-01      3.28432886e-06
+model.solvers.SteadyStateSolver   INFO          46.60%            0.000233      9.96529880e-01      3.26557115e-06
+model.solvers.SteadyStateSolver   INFO          46.80%            0.000234      9.96529944e-01      3.24783706e-06
+model.solvers.SteadyStateSolver   INFO          47.00%            0.000235      9.96530005e-01      3.23107074e-06
+model.solvers.SteadyStateSolver   INFO          47.20%            0.000236      9.96530062e-01      3.21521941e-06
+model.solvers.SteadyStateSolver   INFO          47.40%            0.000237      9.96530116e-01      3.20023324e-06
+model.solvers.SteadyStateSolver   INFO          47.60%            0.000238      9.96530167e-01      3.18606490e-06
+model.solvers.SteadyStateSolver   INFO          47.80%            0.000239      9.96530216e-01      3.17266972e-06
+model.solvers.SteadyStateSolver   INFO          48.00%            0.000240      9.96530262e-01      3.16000556e-06
+model.solvers.SteadyStateSolver   INFO          48.20%            0.000241      9.96530305e-01      3.14803258e-06
+model.solvers.SteadyStateSolver   INFO          48.40%            0.000242      9.96530346e-01      3.13671303e-06
+model.solvers.SteadyStateSolver   INFO          48.60%            0.000243      9.96530385e-01      3.12601119e-06
+model.solvers.SteadyStateSolver   INFO          48.80%            0.000244      9.96530421e-01      3.11589336e-06
+model.solvers.SteadyStateSolver   INFO          49.00%            0.000245      9.96530456e-01      3.10632772e-06
+model.solvers.SteadyStateSolver   INFO          49.20%            0.000246      9.96530489e-01      3.09728416e-06
+model.solvers.SteadyStateSolver   INFO          49.40%            0.000247      9.96530520e-01      3.08873411e-06
+model.solvers.SteadyStateSolver   INFO          49.60%            0.000248      9.96530549e-01      3.08065064e-06
+model.solvers.SteadyStateSolver   INFO          49.80%            0.000249      9.96530576e-01      3.07300832e-06
+model.solvers.SteadyStateSolver   INFO          50.00%            0.000250      9.96530603e-01      3.06578312e-06
+model.solvers.SteadyStateSolver   INFO          50.20%            0.000251      9.96530627e-01      3.05895221e-06
+model.solvers.SteadyStateSolver   INFO          50.40%            0.000252      9.96530651e-01      3.05249407e-06
+model.solvers.SteadyStateSolver   INFO          50.60%            0.000253      9.96530673e-01      3.04638836e-06
+model.solvers.SteadyStateSolver   INFO          50.80%            0.000254      9.96530694e-01      3.04061589e-06
+model.solvers.SteadyStateSolver   INFO          51.00%            0.000255      9.96530713e-01      3.03515844e-06
+model.solvers.SteadyStateSolver   INFO          51.20%            0.000256      9.96530732e-01      3.02999881e-06
+model.solvers.SteadyStateSolver   INFO          51.40%            0.000257      9.96530750e-01      3.02512075e-06
+model.solvers.SteadyStateSolver   INFO          51.60%            0.000258      9.96530766e-01      3.02050891e-06
+model.solvers.SteadyStateSolver   INFO          51.80%            0.000259      9.96530782e-01      3.01614879e-06
+model.solvers.SteadyStateSolver   INFO          52.00%            0.000260      9.96530797e-01      3.01202660e-06
+model.solvers.SteadyStateSolver   INFO          52.20%            0.000261      9.96530811e-01      3.00812937e-06
+model.solvers.SteadyStateSolver   INFO          52.40%            0.000262      9.96530824e-01      3.00444482e-06
+model.solvers.SteadyStateSolver   INFO          52.60%            0.000263      9.96530837e-01      3.00096136e-06
+model.solvers.SteadyStateSolver   INFO          52.80%            0.000264      9.96530849e-01      2.99766802e-06
+model.solvers.SteadyStateSolver   INFO          53.00%            0.000265      9.96530860e-01      2.99455439e-06
+model.solvers.SteadyStateSolver   INFO          53.20%            0.000266      9.96530871e-01      2.99161068e-06
+model.solvers.SteadyStateSolver   INFO          53.40%            0.000267      9.96530881e-01      2.98882762e-06
+model.solvers.SteadyStateSolver   INFO          53.60%            0.000268      9.96530891e-01      2.98619644e-06
+model.solvers.SteadyStateSolver   INFO          53.80%            0.000269      9.96530900e-01      2.98370882e-06
+model.solvers.SteadyStateSolver   INFO          54.00%            0.000270      9.96530908e-01      2.98135694e-06
+model.solvers.SteadyStateSolver   INFO          54.20%            0.000271      9.96530916e-01      2.97913341e-06
+model.solvers.SteadyStateSolver   INFO          54.40%            0.000272      9.96530924e-01      2.97703128e-06
+model.solvers.SteadyStateSolver   INFO          54.60%            0.000273      9.96530931e-01      2.97504391e-06
+model.solvers.SteadyStateSolver   INFO          54.80%            0.000274      9.96530938e-01      2.97316502e-06
+model.solvers.SteadyStateSolver   INFO          55.00%            0.000275      9.96530944e-01      2.97138869e-06
+model.solvers.SteadyStateSolver   INFO          55.20%            0.000276      9.96530950e-01      2.96970931e-06
+model.solvers.SteadyStateSolver   INFO          55.40%            0.000277      9.96530956e-01      2.96812154e-06
+model.solvers.SteadyStateSolver   INFO          55.60%            0.000278      9.96530961e-01      2.96662042e-06
+model.solvers.SteadyStateSolver   INFO          55.80%            0.000279      9.96530966e-01      2.96520125e-06
+model.solvers.SteadyStateSolver   INFO          56.00%            0.000280      9.96530971e-01      2.96385955e-06
+model.solvers.SteadyStateSolver   INFO          56.20%            0.000281      9.96530976e-01      2.96259106e-06
+model.solvers.SteadyStateSolver   INFO          56.40%            0.000282      9.96530980e-01      2.96139173e-06
+model.solvers.SteadyStateSolver   INFO          56.60%            0.000283      9.96530984e-01      2.96025782e-06
+model.solvers.SteadyStateSolver   INFO          56.80%            0.000284      9.96530988e-01      2.95918581e-06
+model.solvers.SteadyStateSolver   INFO          57.00%            0.000285      9.96530992e-01      2.95817233e-06
+model.solvers.SteadyStateSolver   INFO          57.20%            0.000286      9.96530995e-01      2.95721415e-06
+model.solvers.SteadyStateSolver   INFO          57.40%            0.000287      9.96530999e-01      2.95630824e-06
+model.solvers.SteadyStateSolver   INFO          57.60%            0.000288      9.96531002e-01      2.95545175e-06
+model.solvers.SteadyStateSolver   INFO          57.80%            0.000289      9.96531005e-01      2.95464204e-06
+model.solvers.SteadyStateSolver   INFO          58.00%            0.000290      9.96531007e-01      2.95387653e-06
+model.solvers.SteadyStateSolver   INFO          58.20%            0.000291      9.96531010e-01      2.95315281e-06
+model.solvers.SteadyStateSolver   INFO          58.40%            0.000292      9.96531013e-01      2.95246855e-06
+model.solvers.SteadyStateSolver   INFO          58.60%            0.000293      9.96531015e-01      2.95182162e-06
+model.solvers.SteadyStateSolver   INFO          58.80%            0.000294      9.96531017e-01      2.95121001e-06
+model.solvers.SteadyStateSolver   INFO          59.00%            0.000295      9.96531019e-01      2.95063179e-06
+model.solvers.SteadyStateSolver   INFO          59.20%            0.000296      9.96531021e-01      2.95008513e-06
+model.solvers.SteadyStateSolver   INFO          59.40%            0.000297      9.96531023e-01      2.94956828e-06
+model.solvers.SteadyStateSolver   INFO          59.60%            0.000298      9.96531025e-01      2.94907963e-06
+model.solvers.SteadyStateSolver   INFO          59.80%            0.000299      9.96531026e-01      2.94861767e-06
+model.solvers.SteadyStateSolver   INFO          60.00%            0.000300      9.96531028e-01      2.94818094e-06
+model.solvers.SteadyStateSolver   INFO          60.20%            0.000301      9.96531030e-01      2.94776805e-06
+model.solvers.SteadyStateSolver   INFO          60.40%            0.000302      9.96531031e-01      2.94737769e-06
+model.solvers.SteadyStateSolver   INFO          60.60%            0.000303      9.96531032e-01      2.94700858e-06
+model.solvers.SteadyStateSolver   INFO          60.80%            0.000304      9.96531034e-01      2.94665962e-06
+model.solvers.SteadyStateSolver   INFO          61.00%            0.000305      9.96531035e-01      2.94632971e-06
+model.solvers.SteadyStateSolver   INFO          61.20%            0.000306      9.96531036e-01      2.94601782e-06
+model.solvers.SteadyStateSolver   INFO          61.40%            0.000307      9.96531037e-01      2.94572295e-06
+model.solvers.SteadyStateSolver   INFO          61.60%            0.000308      9.96531038e-01      2.94544416e-06
+model.solvers.SteadyStateSolver   INFO          61.80%            0.000309      9.96531039e-01      2.94518057e-06
+model.solvers.SteadyStateSolver   INFO          62.00%            0.000310      9.96531040e-01      2.94493137e-06
+model.solvers.SteadyStateSolver   INFO          62.20%            0.000311      9.96531041e-01      2.94469578e-06
+model.solvers.SteadyStateSolver   INFO          62.40%            0.000312      9.96531041e-01      2.94447306e-06
+model.solvers.SteadyStateSolver   INFO          62.60%            0.000313      9.96531042e-01      2.94426249e-06
+model.solvers.SteadyStateSolver   INFO          62.80%            0.000314      9.96531043e-01      2.94406339e-06
+model.solvers.SteadyStateSolver   INFO          63.00%            0.000315      9.96531044e-01      2.94387516e-06
+model.solvers.SteadyStateSolver   INFO          63.20%            0.000316      9.96531044e-01      2.94369721e-06
+model.solvers.SteadyStateSolver   INFO          63.40%            0.000317      9.96531045e-01      2.94352898e-06
+model.solvers.SteadyStateSolver   INFO          63.60%            0.000318      9.96531045e-01      2.94336993e-06
+model.solvers.SteadyStateSolver   INFO          63.80%            0.000319      9.96531046e-01      2.94321956e-06
+model.solvers.SteadyStateSolver   INFO          64.00%            0.000320      9.96531047e-01      2.94307738e-06
+model.solvers.SteadyStateSolver   INFO          64.20%            0.000321      9.96531047e-01      2.94294296e-06
+model.solvers.SteadyStateSolver   INFO          64.40%            0.000322      9.96531047e-01      2.94281589e-06
+model.solvers.SteadyStateSolver   INFO          64.60%            0.000323      9.96531048e-01      2.94269575e-06
+model.solvers.SteadyStateSolver   INFO          64.80%            0.000324      9.96531048e-01      2.94258218e-06
+model.solvers.SteadyStateSolver   INFO          65.00%            0.000325      9.96531049e-01      2.94247479e-06
+model.solvers.SteadyStateSolver   INFO          65.20%            0.000326      9.96531049e-01      2.94237323e-06
+model.solvers.SteadyStateSolver   INFO          65.40%            0.000327      9.96531049e-01      2.94227726e-06
+model.solvers.SteadyStateSolver   INFO          65.60%            0.000328      9.96531050e-01      2.94218653e-06
+model.solvers.SteadyStateSolver   INFO          65.80%            0.000329      9.96531050e-01      2.94210074e-06
+model.solvers.SteadyStateSolver   INFO          66.00%            0.000330      9.96531050e-01      2.94201963e-06
+model.solvers.SteadyStateSolver   INFO          66.20%            0.000331      9.96531051e-01      2.94194295e-06
+model.solvers.SteadyStateSolver   INFO          66.40%            0.000332      9.96531051e-01      2.94187045e-06
+model.solvers.SteadyStateSolver   INFO          66.60%            0.000333      9.96531051e-01      2.94180191e-06
+model.solvers.SteadyStateSolver   INFO          66.80%            0.000334      9.96531051e-01      2.94173713e-06
+model.solvers.SteadyStateSolver   INFO          67.00%            0.000335      9.96531052e-01      2.94167588e-06
+model.solvers.SteadyStateSolver   INFO          67.20%            0.000336      9.96531052e-01      2.94161797e-06
+model.solvers.SteadyStateSolver   INFO          67.40%            0.000337      9.96531052e-01      2.94156321e-06
+model.solvers.SteadyStateSolver   INFO          67.60%            0.000338      9.96531052e-01      2.94151143e-06
+model.solvers.SteadyStateSolver   INFO          67.80%            0.000339      9.96531052e-01      2.94146246e-06
+model.solvers.SteadyStateSolver   INFO          68.00%            0.000340      9.96531053e-01      2.94141614e-06
+model.solvers.SteadyStateSolver   INFO          68.20%            0.000341      9.96531053e-01      2.94137233e-06
+model.solvers.SteadyStateSolver   INFO          68.40%            0.000342      9.96531053e-01      2.94133090e-06
+model.solvers.SteadyStateSolver   INFO          68.60%            0.000343      9.96531053e-01      2.94129172e-06
+model.solvers.SteadyStateSolver   INFO          68.80%            0.000344      9.96531053e-01      2.94125468e-06
+model.solvers.SteadyStateSolver   INFO          69.00%            0.000345      9.96531053e-01      2.94121967e-06
+model.solvers.SteadyStateSolver   INFO          69.20%            0.000346      9.96531053e-01      2.94118662e-06
+model.solvers.SteadyStateSolver   INFO          69.40%            0.000347      9.96531053e-01      2.94115539e-06
+model.solvers.SteadyStateSolver   INFO          69.60%            0.000348      9.96531054e-01      2.94112587e-06
+model.solvers.SteadyStateSolver   INFO          69.80%            0.000349      9.96531054e-01      2.94109795e-06
+model.solvers.SteadyStateSolver   INFO          70.00%            0.000350      9.96531054e-01      2.94107155e-06
+model.solvers.SteadyStateSolver   INFO          70.20%            0.000351      9.96531054e-01      2.94104659e-06
+model.solvers.SteadyStateSolver   INFO          70.40%            0.000352      9.96531054e-01      2.94102299e-06
+model.solvers.SteadyStateSolver   INFO          70.60%            0.000353      9.96531054e-01      2.94100071e-06
+model.solvers.SteadyStateSolver   INFO          70.80%            0.000354      9.96531054e-01      2.94097967e-06
+model.solvers.SteadyStateSolver   INFO          71.00%            0.000355      9.96531054e-01      2.94095979e-06
+model.solvers.SteadyStateSolver   INFO          71.20%            0.000356      9.96531054e-01      2.94094098e-06
+model.solvers.SteadyStateSolver   INFO          71.40%            0.000357      9.96531054e-01      2.94092320e-06
+model.solvers.SteadyStateSolver   INFO          71.60%            0.000358      9.96531054e-01      2.94090638e-06
+model.solvers.SteadyStateSolver   INFO          71.80%            0.000359      9.96531054e-01      2.94089048e-06
+model.solvers.SteadyStateSolver   INFO          72.00%            0.000360      9.96531054e-01      2.94087543e-06
+model.solvers.SteadyStateSolver   INFO          72.20%            0.000361      9.96531055e-01      2.94086122e-06
+model.solvers.SteadyStateSolver   INFO          72.40%            0.000362      9.96531055e-01      2.94084741e-06
+model.solvers.SteadyStateSolver   INFO          72.60%            0.000363      9.96531055e-01      2.94083487e-06
+model.solvers.SteadyStateSolver   INFO          72.80%            0.000364      9.96531055e-01      2.94082295e-06
+model.solvers.SteadyStateSolver   INFO          73.00%            0.000365      9.96531055e-01      2.94081163e-06
+model.solvers.SteadyStateSolver   INFO          73.20%            0.000366      9.96531055e-01      2.94080090e-06
+model.solvers.SteadyStateSolver   INFO          73.40%            0.000367      9.96531055e-01      2.94079073e-06
+model.solvers.SteadyStateSolver   INFO          73.60%            0.000368      9.96531055e-01      2.94078112e-06
+model.solvers.SteadyStateSolver   INFO          73.80%            0.000369      9.96531055e-01      2.94077203e-06
+model.solvers.SteadyStateSolver   INFO          74.00%            0.000370      9.96531055e-01      2.94076345e-06
+model.solvers.SteadyStateSolver   INFO          74.20%            0.000371      9.96531055e-01      2.94075534e-06
+model.solvers.SteadyStateSolver   INFO          74.40%            0.000372      9.96531055e-01      2.94074767e-06
+model.solvers.SteadyStateSolver   INFO          74.60%            0.000373      9.96531055e-01      2.94074043e-06
+model.solvers.SteadyStateSolver   INFO          74.80%            0.000374      9.96531055e-01      2.94073358e-06
+model.solvers.SteadyStateSolver   INFO          75.00%            0.000375      9.96531055e-01      2.94072711e-06
+model.solvers.SteadyStateSolver   INFO          75.20%            0.000376      9.96531055e-01      2.94072099e-06
+model.solvers.SteadyStateSolver   INFO          75.40%            0.000377      9.96531055e-01      2.94071519e-06
+model.solvers.SteadyStateSolver   INFO          75.60%            0.000378      9.96531055e-01      2.94070971e-06
+model.solvers.SteadyStateSolver   INFO          75.80%            0.000379      9.96531055e-01      2.94070454e-06
+model.solvers.SteadyStateSolver   INFO          76.00%            0.000380      9.96531055e-01      2.94069965e-06
+model.solvers.SteadyStateSolver   INFO          76.20%            0.000381      9.96531055e-01      2.94069503e-06
+model.solvers.SteadyStateSolver   INFO          76.40%            0.000382      9.96531055e-01      2.94069067e-06
+model.solvers.SteadyStateSolver   INFO          76.60%            0.000383      9.96531055e-01      2.94068653e-06
+model.solvers.SteadyStateSolver   INFO          76.80%            0.000384      9.96531055e-01      2.94068260e-06
+model.solvers.SteadyStateSolver   INFO          77.00%            0.000385      9.96531055e-01      2.94067888e-06
+model.solvers.SteadyStateSolver   INFO          77.20%            0.000386      9.96531055e-01      2.94067535e-06
+model.solvers.SteadyStateSolver   INFO          77.40%            0.000387      9.96531055e-01      2.94067203e-06
+model.solvers.SteadyStateSolver   INFO          77.60%            0.000388      9.96531055e-01      2.94066888e-06
+model.solvers.SteadyStateSolver   INFO          77.80%            0.000389      9.96531055e-01      2.94066591e-06
+model.solvers.SteadyStateSolver   INFO          78.00%            0.000390      9.96531055e-01      2.94066311e-06
+model.solvers.SteadyStateSolver   INFO          78.20%            0.000391      9.96531055e-01      2.94066045e-06
+model.solvers.SteadyStateSolver   INFO          78.40%            0.000392      9.96531055e-01      2.94065793e-06
+model.solvers.SteadyStateSolver   INFO          78.60%            0.000393      9.96531055e-01      2.94065518e-06
+model.solvers.SteadyStateSolver   INFO          78.80%            0.000394      9.96531055e-01      2.94065307e-06
+model.solvers.SteadyStateSolver   INFO          79.00%            0.000395      9.96531055e-01      2.94065105e-06
+model.solvers.SteadyStateSolver   INFO          79.20%            0.000396      9.96531055e-01      2.94064911e-06
+model.solvers.SteadyStateSolver   INFO          79.40%            0.000397      9.96531055e-01      2.94064725e-06
+model.solvers.SteadyStateSolver   INFO          79.60%            0.000398      9.96531055e-01      2.94064547e-06
+model.solvers.SteadyStateSolver   INFO          79.80%            0.000399      9.96531055e-01      2.94064378e-06
+model.solvers.SteadyStateSolver   INFO          80.00%            0.000400      9.96531055e-01      2.94064218e-06
+model.solvers.SteadyStateSolver   INFO          80.20%            0.000401      9.96531055e-01      2.94064064e-06
+model.solvers.SteadyStateSolver   INFO          80.40%            0.000402      9.96531055e-01      2.94063918e-06
+model.solvers.SteadyStateSolver   INFO          80.60%            0.000403      9.96531055e-01      2.94063779e-06
+model.solvers.SteadyStateSolver   INFO          80.80%            0.000404      9.96531055e-01      2.94063647e-06
+model.solvers.SteadyStateSolver   INFO          81.00%            0.000405      9.96531055e-01      2.94063523e-06
+model.solvers.SteadyStateSolver   INFO          81.20%            0.000406      9.96531055e-01      2.94063405e-06
+model.solvers.SteadyStateSolver   INFO          81.40%            0.000407      9.96531055e-01      2.94063295e-06
+model.solvers.SteadyStateSolver   INFO          81.60%            0.000408      9.96531055e-01      2.94063192e-06
+model.solvers.SteadyStateSolver   INFO          81.80%            0.000409      9.96531055e-01      2.94063096e-06
+model.solvers.SteadyStateSolver   INFO          82.00%            0.000410      9.96531055e-01      2.94063007e-06
+model.solvers.SteadyStateSolver   INFO          82.20%            0.000411      9.96531055e-01      2.94062923e-06
+model.solvers.SteadyStateSolver   INFO          82.40%            0.000412      9.96531055e-01      2.94062842e-06
+model.solvers.SteadyStateSolver   INFO          82.60%            0.000413      9.96531055e-01      2.94062766e-06
+model.solvers.SteadyStateSolver   INFO          82.80%            0.000414      9.96531055e-01      2.94062693e-06
+model.solvers.SteadyStateSolver   INFO          83.00%            0.000415      9.96531055e-01      2.94062625e-06
+model.solvers.SteadyStateSolver   INFO          83.20%            0.000416      9.96531055e-01      2.94062561e-06
+model.solvers.SteadyStateSolver   INFO          83.40%            0.000417      9.96531055e-01      2.94062500e-06
+model.solvers.SteadyStateSolver   INFO          83.60%            0.000418      9.96531055e-01      2.94062444e-06
+model.solvers.SteadyStateSolver   INFO          83.80%            0.000419      9.96531055e-01      2.94062392e-06
+model.solvers.SteadyStateSolver   INFO          84.00%            0.000420      9.96531055e-01      2.94062343e-06
+model.solvers.SteadyStateSolver   INFO          84.20%            0.000421      9.96531055e-01      2.94062297e-06
+model.solvers.SteadyStateSolver   INFO          84.40%            0.000422      9.96531055e-01      2.94062253e-06
+model.solvers.SteadyStateSolver   INFO          84.60%            0.000423      9.96531055e-01      2.94062211e-06
+model.solvers.SteadyStateSolver   INFO          84.80%            0.000424      9.96531055e-01      2.94062171e-06
+model.solvers.SteadyStateSolver   INFO          85.00%            0.000425      9.96531055e-01      2.94062133e-06
+model.solvers.SteadyStateSolver   INFO          85.20%            0.000426      9.96531055e-01      2.94062097e-06
+model.solvers.SteadyStateSolver   INFO          85.40%            0.000427      9.96531055e-01      2.94062063e-06
+model.solvers.SteadyStateSolver   INFO          85.60%            0.000428      9.96531055e-01      2.94062031e-06
+model.solvers.SteadyStateSolver   INFO          85.80%            0.000429      9.96531055e-01      2.94062001e-06
+model.solvers.SteadyStateSolver   INFO          86.00%            0.000430      9.96531055e-01      2.94061973e-06
+model.solvers.SteadyStateSolver   INFO          86.20%            0.000431      9.96531055e-01      2.94061946e-06
+model.solvers.SteadyStateSolver   INFO          86.40%            0.000432      9.96531055e-01      2.94061920e-06
+model.solvers.SteadyStateSolver   INFO          86.60%            0.000433      9.96531055e-01      2.94061896e-06
+model.solvers.SteadyStateSolver   INFO          86.80%            0.000434      9.96531055e-01      2.94061872e-06
+model.solvers.SteadyStateSolver   INFO          87.00%            0.000435      9.96531055e-01      2.94061850e-06
+model.solvers.SteadyStateSolver   INFO          87.20%            0.000436      9.96531055e-01      2.94061829e-06
+model.solvers.SteadyStateSolver   INFO          87.40%            0.000437      9.96531055e-01      2.94061809e-06
+model.solvers.SteadyStateSolver   INFO          87.60%            0.000438      9.96531055e-01      2.94061790e-06
+model.solvers.SteadyStateSolver   INFO          87.80%            0.000439      9.96531055e-01      2.94061772e-06
+model.solvers.SteadyStateSolver   INFO          88.00%            0.000440      9.96531055e-01      2.94061755e-06
+model.solvers.SteadyStateSolver   INFO          88.20%            0.000441      9.96531055e-01      2.94061739e-06
+model.solvers.SteadyStateSolver   INFO          88.40%            0.000442      9.96531055e-01      2.94061724e-06
+model.solvers.SteadyStateSolver   INFO          88.60%            0.000443      9.96531055e-01      2.94061709e-06
+model.solvers.SteadyStateSolver   INFO          88.80%            0.000444      9.96531055e-01      2.94061696e-06
+model.solvers.SteadyStateSolver   INFO          89.00%            0.000445      9.96531055e-01      2.94061682e-06
+model.solvers.SteadyStateSolver   INFO          89.20%            0.000446      9.96531055e-01      2.94061670e-06
+model.solvers.SteadyStateSolver   INFO          89.40%            0.000447      9.96531055e-01      2.94061658e-06
+model.solvers.SteadyStateSolver   INFO          89.60%            0.000448      9.96531055e-01      2.94061647e-06
+model.solvers.SteadyStateSolver   INFO          89.80%            0.000449      9.96531055e-01      2.94061636e-06
+model.solvers.SteadyStateSolver   INFO          90.00%            0.000450      9.96531055e-01      2.94061627e-06
+model.solvers.SteadyStateSolver   INFO          90.20%            0.000451      9.96531055e-01      2.94061617e-06
+model.solvers.SteadyStateSolver   INFO          90.40%            0.000452      9.96531055e-01      2.94061608e-06
+model.solvers.SteadyStateSolver   INFO          90.60%            0.000453      9.96531055e-01      2.94061600e-06
+model.solvers.SteadyStateSolver   INFO          90.80%            0.000454      9.96531055e-01      2.94061592e-06
+model.solvers.SteadyStateSolver   INFO          91.00%            0.000455      9.96531055e-01      2.94061584e-06
+model.solvers.SteadyStateSolver   INFO          91.20%            0.000456      9.96531055e-01      2.94061577e-06
+model.solvers.SteadyStateSolver   INFO          91.40%            0.000457      9.96531055e-01      2.94061570e-06
+model.solvers.SteadyStateSolver   INFO          91.60%            0.000458      9.96531055e-01      2.94061563e-06
+model.solvers.SteadyStateSolver   INFO          91.80%            0.000459      9.96531055e-01      2.94061557e-06
+model.solvers.SteadyStateSolver   INFO          92.00%            0.000460      9.96531055e-01      2.94061552e-06
+model.solvers.SteadyStateSolver   INFO          92.20%            0.000461      9.96531055e-01      2.94061546e-06
+model.solvers.SteadyStateSolver   INFO          92.40%            0.000462      9.96531055e-01      2.94061541e-06
+model.solvers.SteadyStateSolver   INFO          92.60%            0.000463      9.96531055e-01      2.94061536e-06
+model.solvers.SteadyStateSolver   INFO          92.80%            0.000464      9.96531055e-01      2.94061532e-06
+model.solvers.SteadyStateSolver   INFO          93.00%            0.000465      9.96531055e-01      2.94061527e-06
+model.solvers.SteadyStateSolver   INFO          93.20%            0.000466      9.96531055e-01      2.94061523e-06
+model.solvers.SteadyStateSolver   INFO          93.40%            0.000467      9.96531055e-01      2.94061519e-06
+model.solvers.SteadyStateSolver   INFO          93.60%            0.000468      9.96531055e-01      2.94061515e-06
+model.solvers.SteadyStateSolver   INFO          93.80%            0.000469      9.96531055e-01      2.94061512e-06
+model.solvers.SteadyStateSolver   INFO          94.00%            0.000470      9.96531055e-01      2.94061509e-06
+model.solvers.SteadyStateSolver   INFO          94.20%            0.000471      9.96531055e-01      2.94061505e-06
+model.solvers.SteadyStateSolver   INFO          94.40%            0.000472      9.96531055e-01      2.94061502e-06
+model.solvers.SteadyStateSolver   INFO          94.60%            0.000473      9.96531055e-01      2.94061500e-06
+model.solvers.SteadyStateSolver   INFO          94.80%            0.000474      9.96531055e-01      2.94061497e-06
+model.solvers.SteadyStateSolver   INFO          95.00%            0.000475      9.96531055e-01      2.94061494e-06
+model.solvers.SteadyStateSolver   INFO          95.20%            0.000476      9.96531055e-01      2.94061492e-06
+model.solvers.SteadyStateSolver   INFO          95.40%            0.000477      9.96531055e-01      2.94061490e-06
+model.solvers.SteadyStateSolver   INFO          95.60%            0.000478      9.96531055e-01      2.94061487e-06
+model.solvers.SteadyStateSolver   INFO          95.80%            0.000479      9.96531055e-01      2.94061485e-06
+model.solvers.SteadyStateSolver   INFO          96.00%            0.000480      9.96531055e-01      2.94061483e-06
+model.solvers.SteadyStateSolver   INFO          96.20%            0.000481      9.96531055e-01      2.94061482e-06
+model.solvers.SteadyStateSolver   INFO          96.40%            0.000482      9.96531055e-01      2.94061480e-06
+model.solvers.SteadyStateSolver   INFO          96.60%            0.000483      9.96531055e-01      2.94061478e-06
+model.solvers.SteadyStateSolver   INFO          96.80%            0.000484      9.96531055e-01      2.94061477e-06
+model.solvers.SteadyStateSolver   INFO          97.00%            0.000485      9.96531055e-01      2.94061475e-06
+model.solvers.SteadyStateSolver   INFO          97.20%            0.000486      9.96531055e-01      2.94061474e-06
+model.solvers.SteadyStateSolver   INFO          97.40%            0.000487      9.96531055e-01      2.94061472e-06
+model.solvers.SteadyStateSolver   INFO          97.60%            0.000488      9.96531055e-01      2.94061471e-06
+model.solvers.SteadyStateSolver   INFO          97.80%            0.000489      9.96531055e-01      2.94061470e-06
+model.solvers.SteadyStateSolver   INFO          98.00%            0.000490      9.96531055e-01      2.94061469e-06
+model.solvers.SteadyStateSolver   INFO          98.20%            0.000491      9.96531055e-01      2.94061468e-06
+model.solvers.SteadyStateSolver   INFO          98.40%            0.000492      9.96531055e-01      2.94061467e-06
+model.solvers.SteadyStateSolver   INFO          98.60%            0.000493      9.96531055e-01      2.94061466e-06
+model.solvers.SteadyStateSolver   INFO          98.80%            0.000494      9.96531055e-01      2.94061465e-06
+model.solvers.SteadyStateSolver   INFO          99.00%            0.000495      9.96531055e-01      2.94061464e-06
+model.solvers.SteadyStateSolver   INFO          99.20%            0.000496      9.96531055e-01      2.94061463e-06
+model.solvers.SteadyStateSolver   INFO          99.40%            0.000497      9.96531055e-01      2.94061462e-06
+model.solvers.SteadyStateSolver   INFO          99.60%            0.000498      9.96531055e-01      2.94061462e-06
+model.solvers.SteadyStateSolver   INFO          99.80%            0.000499      9.96531055e-01      2.94061461e-06
+model.solvers.SteadyStateSolver   INFO         100.00%            0.000500      9.96531055e-01      2.94061460e-06
+model.solvers.SteadyStateSolver   INFO         finish
+
+model.solvers.SteadyStateSolver   INFO     ODE integration trajectory is written to auto_ode_coverages.py.
+model   WARNING  Found redundant keyword argument: solve_ode
+model   INFO     --- Solve Micro-kinetic model ---
+model   INFO     use user-defined coverages as initial guess...
+model   INFO     getting precise steady state coverages...
+model.solvers.SteadyStateSolver   INFO     Entering main loop...
+model.solvers.SteadyStateSolver   INFO     MDNewton Iterator instantiation - success!
+model.solvers.SteadyStateSolver   INFO     initial guess coverage - success
+model.solvers.SteadyStateSolver   INFO     entering Newton Iteration( 1 )...
+model.solvers.SteadyStateSolver   INFO       status           N            residual                norm
+model.solvers.SteadyStateSolver   INFO     ------------------------------------------------------------
+model.solvers.SteadyStateSolver   INFO     in_process         1       5.3960640803e-21       6.3544044737e-21
+model.solvers.SteadyStateSolver   INFO     in_process         2       6.3440162960e-46       8.9316504429e-46
+model.solvers.SteadyStateSolver   INFO     in_process         3       7.1758427187e-96       9.7531965187e-96
+model.solvers.SteadyStateSolver   INFO     success            3       7.1758427187e-96       9.7531965187e-96
+model.solvers.SteadyStateSolver   INFO     Steady State Coverages:
+
+ index     intermediate name        steady state coverage         
+------------------------------------------------------------
+ 00        CO_s                     9.9653105542133014e-01        
+ 01        O_s                      2.9406144848066831e-06        
+------------------------------------------------------------
+
+model.solvers.SteadyStateSolver   INFO     error = 7.175843e-96
+model.solvers.MeanFieldSolver   INFO     
+
+reactions                                k_forward   k_reverse   
+------------------------------------------------------------------
+CO_g + *_s <-> C-O_s -> CO_s             9.8612e+09  3.4281e+02  
+O2_g + 2*_s <-> O-O_2s -> 2O_s           1.3798e+03  8.8898e-22  
+CO_s + O_s <-> CO-O_2s -> CO2_g + 2*_s   5.6567e+04  4.3770e-10  
+------------------------------------------------------------------
+
+model.solvers.MeanFieldSolver   INFO     
+
+reactions                                R_forward   R_reverse   
+------------------------------------------------------------------
+CO_g + *_s <-> C-O_s -> CO_s             3.4179e+02  3.4162e+02  
+O2_g + 2*_s <-> O-O_2s -> 2O_s           8.2882e-02  7.6872e-33  
+CO_s + O_s <-> CO-O_2s -> CO2_g + 2*_s   1.6576e-01  0.0000e+00  
+------------------------------------------------------------------
+
+model.solvers.MeanFieldSolver   INFO     Turnover Frequencies:
+
+ index     gas name                 TOF                           
+------------------------------------------------------------
+ 00        CO2_g                    1.6576357191920896e-01        
+ 01        CO_g                     -1.6576357191920896e-01       
+ 02        O2_g                     -8.2881785959604479e-02       
+------------------------------------------------------------
+
+model.solvers.MeanFieldSolver   INFO     Reversibilities:
+
+ index     elementary reaction                                                   reversibilities               
+----------------------------------------------------------------------------------------------------
+ 00        CO_g + *_s <-> C-O_s -> CO_s                                          9.9951501306729562e-01        
+ 01        O2_g + 2*_s <-> O-O_2s -> 2O_s                                        9.2749240054924149e-32        
+ 02        CO_s + O_s <-> CO-O_2s -> CO2_g + 2*_s                                0.0000000000000000e+00        
+----------------------------------------------------------------------------------------------------
+
+model.MkmRunScript   INFO     Time used: 0 h 0 min 4.111723 sec
